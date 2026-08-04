@@ -1,2 +1,376 @@
-˝KÆœ…j¯øÆ˘ø± ‚¶€?Æ˘•äw∂˜ˆ‚ü˙l:ó´jÿ®ûz-•ÍÊä€^wı,zª?%´‚˛ªÊ˛«+äõl˛ªÊñ)ﬁ€ﬂ€äÈ∞Í^≠´b¢yË∂ó´ö+my“ÜgVÊ7Fñˆ‚Çí∞†íwW6R7G&ñ7Bs∞††ñ6ˆÁ7BñÊóFñ∆ó¶VEvÜVV«2“ÊWrvVµ6WBÇì∞†ñ6ˆÁ7BñÊóFñ∆ó¶VDv∆∆W&ñW2“ÊWrvVµ6WBÇì∞†ñ6ˆÁ7BñÊóFñ∆ó¶VE67&ˆ∆ƒfñ∆«2“ÊWrvVµ6WBÇì∞†ñ6ˆÁ7B7Fñ6∑î6ˆÁFWáD6˜VÁG2“ÊWrvV¥÷Çì∞††ñgVÊ7Fñˆ‚7Vó&U7Fñ6∑î6ˆÁFWáBÜV∆V÷VÁB¬6∆74Ê÷Rí∞†êñ∆WB6˜VÁG2“7Fñ6∑î6ˆÁFWáD6˜VÁG2ÊvWBÜV∆V÷VÁBì∞†êññbÇ6˜VÁG2í∞†êêñ6˜VÁG2“∑”∞†êêó7Fñ6∑î6ˆÁFWáD6˜VÁG2Á6WBÜV∆V÷VÁB¬6˜VÁG2ì∞†êó–†êñ6˜VÁG5∂6∆74Ê÷U““Ü6˜VÁG5∂6∆74Ê÷U“«¬í≤∞†êñV∆V÷VÁBÊ6∆74∆ó7BÊFBÜ6∆74Ê÷Rì∞†ó–††ñgVÊ7Fñˆ‚&V∆V6U7Fñ6∑î6ˆÁFWáBÜV∆V÷VÁB¬6∆74Ê÷Rí∞†êñ6ˆÁ7B6˜VÁG2“7Fñ6∑î6ˆÁFWáD6˜VÁG2ÊvWBÜV∆V÷VÁBì∞†êññbÇ6˜VÁG2«¬6˜VÁG5∂6∆74Ê÷U“í&WGW&„∞†êñ6˜VÁG5∂6∆74Ê÷U“”“∞†êññbÜ6˜VÁG5∂6∆74Ê÷U“””“í∞†êêñFV∆WFR6˜VÁG5∂6∆74Ê÷U”∞†êêñV∆V÷VÁBÊ6∆74∆ó7BÁ&V÷˜fRÜ6∆74Ê÷Rì∞†êó–†ó–††ñgVÊ7Fñˆ‚ÁV÷&W%f«VRáf«VR¬f∆∆&6≤í∞†êñ6ˆÁ7B'6VB“ÁV÷&W"áf«VRì∞†êó&WGW&‚ÁV÷&W"Êó4fñÊóFRá'6VBíÚ'6VB¢f∆∆&6≥∞†ó–††ñgVÊ7Fñˆ‚&VfW'5&VGV6VD÷˜Fñˆ‚Çí∞†êó&WGW&‚vñÊF˜rÊ÷F6Ñ÷VFñbbvñÊF˜rÊ÷F6Ñ÷VFñÇrá&VfW'2◊&VGV6VB÷÷˜Fñˆ„¢&VGV6RíríÊ÷F6ÜW3∞†ó–††ñgVÊ7Fñˆ‚ñÊóEvÜVV¬á&ˆ˜Bí∞†êññbÇ&ˆ˜B«¬ñÊóFñ∆ó¶VEvÜVV«2ÊÜ2á&ˆ˜Bíí&WGW&„∞††êñ6ˆÁ7BFó62“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr◊vÜVV≈ı˜7FvR‚ñ÷s¶Ê˜BÇÊr◊vÜVV≈ı˜ˆñÁFW"írì∞†êñ6ˆÁ7B'WGFˆ‚“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr◊vÜVV≈ıˆ'WGFˆ‚rì∞†êñ6ˆÁ7B∆&V¬“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr◊vÜVV≈ıˆ'WGFˆ‚÷∆&V¬rì∞†êñ6ˆÁ7B&W7V«B“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr◊vÜVV≈ı˜&W7V«Brì∞†êñ∆WB˜WF6ˆ÷W3∞††êóG'í∞†êêñ˜WF6ˆ÷W2“•4Ù‚Á'6Rá&ˆ˜BÊFF6WBÁ&W7V«G2«¬uµ“ríÊfñ«FW"ÜgVÊ7Fñˆ‚ÜóFV“í∞†êêêó&WGW&‚óFV“bbÁV÷&W"Êó4fñÊóFRÑÁV÷&W"ÜóFV“ÊÊv∆RííbbGóVˆbóFV“ÁFWáB””“w7G&ñÊrrbbóFV“ÁFWáBÁG&ñ“Çì∞†êêó“ì∞†êó“6F6ÇÜW'&˜"í∞†êêñ˜WF6ˆ÷W2“µ”∞†êó–††êññbÇFó62«¬'WGFˆ‚«¬∆&V¬«¬&W7V«B«¬˜WF6ˆ÷W2Ê∆VÊwFÇí&WGW&„∞†êññÊóFñ∆ó¶VEvÜVV«2ÊFBá&ˆ˜Bì∞††êñ∆WB&˜FFñˆ‚“∞†êñ∆WBÊñ÷Fñˆ‚“ÁV∆√∞†êñ6ˆÁ7BGW&Fñˆ‚“÷FÇÊ÷ÇÉ#¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÊGW&Fñˆ‚¬S#íì∞†êñ6ˆÁ7B÷ñÊñ◊V’GW&Á2“÷FÇÊ÷ÇÉ¬÷FÇÊf∆ˆ˜"ÜÁV÷&W%f«VRá&ˆ˜BÊFF6WBÊ÷ñÂGW&Á2¬Rííì∞†êñ6ˆÁ7B÷Üñ◊V’GW&Á2“÷FÇÊ÷ÇÜ÷ñÊñ◊V’GW&Á2¬÷FÇÊf∆ˆ˜"ÜÁV÷&W%f«VRá&ˆ˜BÊFF6WBÊ÷ÖGW&Á2¬rííì∞†êñ6ˆÁ7B&W7V«DGW&Fñˆ‚“÷FÇÊ÷ÇÉ¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÁ&W7V«DGW&Fñˆ‚¬Síì∞†êñ6ˆÁ7B&W7V«DÊñ÷Fñˆ‚“≤vfFRr¬w6∆ñFR◊Wr¬w¶ˆˆ“r¬vÊˆÊRu“ÊñÊ6«VFW2á&ˆ˜BÊFF6WBÁ&W7V«DÊñ÷Fñˆ‚ê†êêìÚ&ˆ˜BÊFF6WBÁ&W7V«DÊñ÷Fñˆ‡†êêì¢w6∆ñFR◊Ws∞††êó&W7V«BÊFF6WBÊÊñ÷Fñˆ‚“&W7V«DÊñ÷Fñˆ„∞†êó&W7V«BÁ7Gñ∆RÁ6WE&˜W'GíÇr“÷r◊&W7V«B÷GW&Fñˆ‚r¬&W7V«DGW&Fñˆ‚≤v◊2rì∞††êñ'WGFˆ‚ÊFDWfVÁD∆ó7FVÊW"Çv6∆ñ6≤r¬gVÊ7Fñˆ‚Çí∞†êêññbÜ'WGFˆ‚ÊFó6&∆VBí&WGW&„∞††êêñ6ˆÁ7B˜WF6ˆ÷R“˜WF6ˆ÷W5¥÷FÇÊf∆ˆ˜"Ñ÷FÇÁ&ÊFˆ“Çí¢˜WF6ˆ÷W2Ê∆VÊwFÇï”∞†êêñ6ˆÁ7BÊ˜&÷∆ó¶VE&˜FFñˆ‚“Çá&˜FFñˆ‚R3cí≤3cíR3c∞†êêñ6ˆÁ7BÊ˜&÷∆ó¶VEF&vWB“ÇÜÁV÷&W%f«VRÜ˜WF6ˆ÷RÊÊv∆R¬íR3cí≤3cíR3c∞†êêñ6ˆÁ7B6˜'&V7Fñˆ‚“ÜÊ˜&÷∆ó¶VEF&vWB“Ê˜&÷∆ó¶VE&˜FFñˆ‚≤3cíR3c∞†êêñ6ˆÁ7BGW&Á2“÷ñÊñ◊V’GW&Á2≤÷FÇÊf∆ˆ˜"Ñ÷FÇÁ&ÊFˆ“Çí¢Ü÷Üñ◊V’GW&Á2“÷ñÊñ◊V’GW&Á2≤íì∞†êêñ6ˆÁ7BF&vWB“&˜FFñˆ‚≤áGW&Á2¢3cí≤6˜'&V7Fñˆ„∞††êêñ'WGFˆ‚ÊFó6&∆VB“G'VS∞†êêñ'WGFˆ‚Ê6∆74∆ó7BÊFBÇvó2◊7ñÊÊñÊrrì∞†êêñ∆&V¬ÁFWáD6ˆÁFVÁB“&ˆ˜BÊFF6WBÁ7ñÊÊñÊuFWáB«¬t∆'V∆WFW7L:vó&ÊF˛(
-bs∞†êêó&W7V«BÊ6∆74∆ó7BÁ&V÷˜fRÇvó2◊fó6ñ&∆Rrì∞†êêó&W7V«BÁFWáD6ˆÁFVÁB“rs∞††êêññbÜÊñ÷Fñˆ‚bbGóVˆbÊñ÷Fñˆ‚Ê6Ê6V¬””“vgVÊ7Fñˆ‚ríÊñ÷Fñˆ‚Ê6Ê6V¬Çì∞††êêñ6ˆÁ7BfñÊó6Ç“gVÊ7Fñˆ‚Çí∞†êêêó&˜FFñˆ‚“F&vWC∞†êêêñFó62Á7Gñ∆RÁG&Á6f˜&““w&˜FFRÇr≤F&vWB≤vFVrís∞†êêêñ'WGFˆ‚ÊFó6&∆VB“f«6S∞†êêêñ'WGFˆ‚Ê6∆74∆ó7BÁ&V÷˜fRÇvó2◊7ñÊÊñÊrrì∞†êêêñ∆&V¬ÁFWáD6ˆÁFVÁB“&ˆ˜BÊFF6WBÁ&WVEFWáB«¬uFó&FRÁVWfÚ∆'V∆WFs∞†êêêó&W7V«BÁFWáD6ˆÁFVÁB“˜WF6ˆ÷RÁFWáC∞†êêêófˆñB&W7V«BÊˆfg6WEvñGFÉ∞†êêêó&W7V«BÊ6∆74∆ó7BÊFBÇvó2◊fó6ñ&∆Rrì∞†êêêñÊñ÷Fñˆ‚“ÁV∆√∞†êêó”∞††êêññbá&VfW'5&VGV6VD÷˜Fñˆ‚Çí«¬GóVˆbFó62ÊÊñ÷FR”“vgVÊ7Fñˆ‚rí∞†êêêñfñÊó6ÇÇì∞†êêêó&WGW&„∞†êêó–††êêñÊñ÷Fñˆ‚“Fó62ÊÊñ÷FRÄ†êêêï∞†êêêêó≤G&Á6f˜&”¢w&˜FFRÇr≤&˜FFñˆ‚≤vFVrír“¿†êêêêó≤G&Á6f˜&”¢w&˜FFRÇr≤F&vWB≤vFVrír–†êêêï“¿†êêêó∞†êêêêñGW&Fñˆ„¢GW&Fñˆ‚¿†êêêêñV6ñÊs¢v7V&ñ2÷&W¶ñW"Ç„Ç¬„s"¬„"√ír¿†êêêêñfñ∆√¢vf˜'v&G2p†êêêó–†êêíì∞†êêñÊñ÷Fñˆ‚ÊFDWfVÁD∆ó7FVÊW"ÇvfñÊó6Çr¬fñÊó6Ç¬≤ˆÊ6S¢G'VR“ì∞†êó“ì∞†ó–††ñgVÊ7Fñˆ‚ñÊóDv∆∆W'íá&ˆ˜Bí∞†êññbÇ&ˆ˜B«¬ñÊóFñ∆ó¶VDv∆∆W&ñW2ÊÜ2á&ˆ˜Bíí&WGW&„∞††êñ6ˆÁ7B7Fñ6∑í“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr÷v∆∆W'ïı˜7Fñ6∑írì∞†êñ6ˆÁ7BfñWw˜'B“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr÷v∆∆W'ïı˜fñWw˜'Brì∞†êñ6ˆÁ7BG&6≤“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr÷v∆∆W'ïı˜G&6≤rì∞†êññbÇ7Fñ6∑í«¬fñWw˜'B«¬G&6≤í&WGW&„∞†êññÊóFñ∆ó¶VDv∆∆W&ñW2ÊFBá&ˆ˜Bì∞††êñ6ˆÁ7B'&V∑ˆñÁB“÷FÇÊ÷ÇÉ3#¬÷FÇÊ÷ñ‚É#¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÊ÷ˆ&ñ∆T'&V∑ˆñÁB¬scrííì∞†êñ6ˆÁ7Bf7F˜"“÷FÇÊ÷ÇÉ„R¬÷FÇÊ÷ñ‚É2¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÁ67&ˆ∆ƒf7F˜"¬ííì∞†êñ6ˆÁ7B&WfW'6R“&ˆ˜BÊFF6WBÊFó&V7Fñˆ‚””“v∆VgB◊FÚ◊&ñváBs∞†êñ∆WBg&÷R“∞†êñ∆WBFó7FÊ6R“∞†êñ∆WB&W6ó¶UFñ÷W"“∞†êñ∆WB&W6ó¶Tˆ'6W'fW"“ÁV∆√∞†êñ∆WBFW7G&˜ñVB“f«6S∞†êñ∆WB7Fñ6∑îÊ6W7F˜'2“µ”∞††êñgVÊ7Fñˆ‚&V∆V6U7Fñ6∑îÊ6W7F˜'2Çí∞†êêó7Fñ6∑îÊ6W7F˜'2Êf˜$V6ÇÜgVÊ7Fñˆ‚Ü6ˆÁFWáBí∞†êêêó&V∆V6U7Fñ6∑î6ˆÁFWáBÜ6ˆÁFWáBÊV∆V÷VÁB¬6ˆÁFWáBÊ6∆74Ê÷Rì∞†êêó“ì∞†êêó7Fñ6∑îÊ6W7F˜'2“µ”∞†êó–††êñgVÊ7Fñˆ‚&W&U7Fñ6∑îÊ6W7F˜'2Çí∞†êêó&V∆V6U7Fñ6∑îÊ6W7F˜'2Çì∞†êêñ∆WBÊ6W7F˜"“&ˆ˜BÁ&VÁDV∆V÷VÁC∞†êêóvÜñ∆RÜÊ6W7F˜"í∞†êêêñ6ˆÁ7B7Gñ∆R“vñÊF˜rÊvWD6ˆ◊WFVE7Gñ∆RÜÊ6W7F˜"ì∞†êêêñ6ˆÁ7B˜fW&f∆˜r“∑7Gñ∆RÊ˜fW&f∆˜r¬7Gñ∆RÊ˜fW&f∆˜uÇ¬7Gñ∆RÊ˜fW&f∆˜uï“Ê¶ˆñ‚Çrrì∞†êêêññbÇÚÜWF˜«67&ˆ∆«∆ÜñFFVÁ∆6∆ó∆˜fW&∆ííÚÁFW7BÜ˜fW&f∆˜ríí∞†êêêêñ6ˆÁ7Bó5vU&ˆ˜B“Ê6W7F˜"””“Fˆ7V÷VÁBÊ&ˆGí«¬Ê6W7F˜"””“Fˆ7V÷VÁBÊFˆ7V÷VÁDV∆V÷VÁC∞†êêêêñ6ˆÁ7B6∆74Ê÷R“ó5vU&ˆ˜BÚvr÷v∆∆W'í◊vR÷6ˆÁFWáBr¢vr÷v∆∆W'í◊7Fñ6∑í÷6ˆÁFWáBs∞†êêêêñ7Vó&U7Fñ6∑î6ˆÁFWáBÜÊ6W7F˜"¬6∆74Ê÷Rì∞†êêêêó7Fñ6∑îÊ6W7F˜'2ÁW6Çá≤V∆V÷VÁC¢Ê6W7F˜"¬6∆74Ê÷S¢6∆74Ê÷R“ì∞†êêêó–†êêêññbÜÊ6W7F˜"””“Fˆ7V÷VÁBÊFˆ7V÷VÁDV∆V÷VÁBí'&V≥∞†êêêñÊ6W7F˜"“Ê6W7F˜"Á&VÁDV∆V÷VÁC∞†êêó–†êó–††êñgVÊ7Fñˆ‚ó57vóT÷ˆFRÇí∞†êêó&WGW&‚&VfW'5&VGV6VD÷˜Fñˆ‚Çí«¬vñÊF˜rÊñÊÊW%vñGFÇ√“'&V∑ˆñÁC∞†êó–††êñgVÊ7Fñˆ‚ñÁBÇí∞†êêñg&÷R“∞†êêññbÜFW7G&˜ñVB«¬&ˆ˜BÊó46ˆÊÊV7FVBí∞†êêêñFW7G&˜íÇì∞†êêêó&WGW&„∞†êêó–††êêññbá&ˆ˜BÊ6∆74∆ó7BÊ6ˆÁFñÁ2Çvó2◊7vóRríí∞†êêêóG&6≤Á7Gñ∆RÁG&Á6f˜&““rs∞†êêêó&WGW&„∞†êêó–††êêñ6ˆÁ7BG&fV¬“÷FÇÊ÷ÇÉ¬&ˆ˜BÊˆfg6WDÜVñváB“7Fñ6∑íÊˆfg6WDÜVñváBì∞†êêñ6ˆÁ7B&ˆ˜EF˜“&ˆ˜BÊvWD&˜VÊFñÊt6∆ñVÁE&V7BÇíÁF˜≤vñÊF˜rÁ67&ˆ∆≈ì∞†êêñ6ˆÁ7B&ˆw&W72“÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É¬ávñÊF˜rÁ67&ˆ∆≈í“&ˆ˜EF˜íÚG&fV¬íì∞†êêñ6ˆÁ7BG&Á6∆FR“&WfW'6RÚ÷Fó7FÊ6R¢É“&ˆw&W72í¢÷Fó7FÊ6R¢&ˆw&W73∞†êêóG&6≤Á7Gñ∆RÁG&Á6f˜&““wG&Á6∆FS6BÇr≤G&Á6∆FR≤wÇ√√ís∞†êó–††êñgVÊ7Fñˆ‚÷V7W&RÇí∞†êêññbÜFW7G&˜ñVB«¬&ˆ˜BÊó46ˆÊÊV7FVBí∞†êêêñFW7G&˜íÇì∞†êêêó&WGW&„∞†êêó–††êêñ6ˆÁ7B7vóR“ó57vóT÷ˆFRÇì∞†êêó&ˆ˜BÊ6∆74∆ó7BÁFˆvv∆RÇvó2◊7vóRr¬7vóRì∞†êêóG&6≤Á7Gñ∆RÁG&Á6f˜&““rs∞††êêññbá7vóRí∞†êêêó&V∆V6U7Fñ6∑îÊ6W7F˜'2Çì∞†êêêó&ˆ˜BÁ7Gñ∆RÊÜVñváB“rs∞†êêêñFó7FÊ6R“∞†êêêó&WGW&„∞†êêó–††êêó&W&U7Fñ6∑îÊ6W7F˜'2Çì∞†êêñ6ˆÁ7BfñWw˜'EvñGFÇ“fñWw˜'BÊ6∆ñVÁEvñGFÉ∞†êêñFó7FÊ6R“÷FÇÊ÷ÇÉ¬G&6≤Á67&ˆ∆≈vñGFÇ“fñWw˜'EvñGFÇì∞†êêó&ˆ˜BÁ7Gñ∆RÊÜVñváB“á7Fñ6∑íÊˆfg6WDÜVñváB≤ÜFó7FÊ6R¢f7F˜"íí≤wÇs∞†êêóñÁBÇì∞†êó–††êñgVÊ7Fñˆ‚&WVW7EñÁBÇí∞†êêññbÇg&÷Ríg&÷R“vñÊF˜rÁ&WVW7DÊñ÷Fñˆ‰g&÷RáñÁBì∞†êó–††êñgVÊ7Fñˆ‚&WVW7D÷V7W&RÇí∞†êêóvñÊF˜rÊ6∆V%Fñ÷V˜WBá&W6ó¶UFñ÷W"ì∞†êêó&W6ó¶UFñ÷W"“vñÊF˜rÁ6WEFñ÷V˜WBÜ÷V7W&R¬#ì∞†êó–††êñgVÊ7Fñˆ‚FW7G&˜íÇí∞†êêññbÜFW7G&˜ñVBí&WGW&„∞†êêñFW7G&˜ñVB“G'VS∞†êêóvñÊF˜rÁ&V÷˜fTWfVÁD∆ó7FVÊW"Çw67&ˆ∆¬r¬&WVW7EñÁBì∞†êêóvñÊF˜rÁ&V÷˜fTWfVÁD∆ó7FVÊW"Çw&W6ó¶Rr¬&WVW7D÷V7W&Rì∞†êêññbá&W6ó¶Tˆ'6W'fW"í&W6ó¶Tˆ'6W'fW"ÊFó66ˆÊÊV7BÇì∞†êêó&V∆V6U7Fñ6∑îÊ6W7F˜'2Çì∞†êêññbÜg&÷RívñÊF˜rÊ6Ê6VƒÊñ÷Fñˆ‰g&÷RÜg&÷Rì∞†êêóvñÊF˜rÊ6∆V%Fñ÷V˜WBá&W6ó¶UFñ÷W"ì∞†êó–††êóvñÊF˜rÊFDWfVÁD∆ó7FVÊW"Çw67&ˆ∆¬r¬&WVW7EñÁB¬≤76ófS¢G'VR“ì∞†êóvñÊF˜rÊFDWfVÁD∆ó7FVÊW"Çw&W6ó¶Rr¬&WVW7D÷V7W&R¬≤76ófS¢G'VR“ì∞††êññbÇu&W6ó¶Tˆ'6W'fW"rñ‚vñÊF˜rí∞†êêó&W6ó¶Tˆ'6W'fW"“ÊWr&W6ó¶Tˆ'6W'fW"á&WVW7D÷V7W&Rì∞†êêó&W6ó¶Tˆ'6W'fW"Êˆ'6W'fRáG&6≤ì∞†êó–††êî'&íÁ&˜F˜GóRÊf˜$V6ÇÊ6∆¬áG&6≤ÁVW'ï6V∆V7F˜$∆¬Çvñ÷rrí¬gVÊ7Fñˆ‚Üñ÷vRí∞†êêññbÇñ÷vRÊ6ˆ◊∆WFRíñ÷vRÊFDWfVÁD∆ó7FVÊW"Çv∆ˆBr¬&WVW7D÷V7W&R¬≤ˆÊ6S¢G'VR“ì∞†êó“ì∞††êóvñÊF˜rÁ&WVW7DÊñ÷Fñˆ‰g&÷RÜ÷V7W&Rì∞†ó–††ñgVÊ7Fñˆ‚ñÊóE67&ˆ∆ƒfñ∆¬á&ˆ˜Bí∞†êññbÇ&ˆ˜B«¬ñÊóFñ∆ó¶VE67&ˆ∆ƒfñ∆«2ÊÜ2á&ˆ˜Bíí&WGW&„∞††êñ∆WBFWáB“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊr◊67&ˆ∆¬÷fñ∆≈ı˜FWáBrì∞†êññbÇFWáBbb&ˆ˜BÊFF6WBÊtfñ∆≈F&vWB””“vÜVFñÊrrí∞†êêóFWáB“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊV∆V÷VÁF˜"÷ÜVFñÊr◊FóF∆Rrì∞†êó–†êññbÇFWáBbb&ˆ˜BÊFF6WBÊtfñ∆≈F&vWB””“wFWáB÷VFóF˜"rí∞†êêóFWáB“&ˆ˜BÁVW'ï6V∆V7F˜"ÇrÊV∆V÷VÁF˜"◊vñFvWB÷6ˆÁFñÊW"rì∞†êó–†êññbÇFWáBí&WGW&„∞†êóFWáBÊ6∆74∆ó7BÊFBÇvr◊67&ˆ∆¬÷fñ∆≈ı˜FWáBrì∞†êññÊóFñ∆ó¶VE67&ˆ∆ƒfñ∆«2ÊFBá&ˆ˜Bì∞††êñ6ˆÁ7BWÜ6«VFVEFw2“≤u45$ïBr¬u5EîƒRr¬t‰ı45$ïBu”∞†êñ6ˆÁ7Bv∆∂W"“Fˆ7V÷VÁBÊ7&VFUG&VUv∆∂W"áFWáB¬ÊˆFTfñ«FW"Â4ÑıuıDUÖBì∞†êñ6ˆÁ7BFWáDÊˆFW2“µ”∞†êñ∆WB7W'&VÁC∞††êóvÜñ∆RÇÜ7W'&VÁB“v∆∂W"ÊÊWáDÊˆFRÇííí∞†êêññbÜ7W'&VÁBÊÊˆFUf«VRbb7W'&VÁBÊÊˆFUf«VRÊ∆VÊwFÇbbWÜ6«VFVEFw2ÊñÊ6«VFW2Ü7W'&VÁBÁ&VÁDV∆V÷VÁBÁFtÊ÷Ríí∞†êêêóFWáDÊˆFW2ÁW6ÇÜ7W'&VÁBì∞†êêó–†êó–††êñ6ˆÁ7B6Ü&7FW'2“µ”∞†êóFWáDÊˆFW2Êf˜$V6ÇÜgVÊ7Fñˆ‚ÜÊˆFRí∞†êêñ6ˆÁ7Bg&v÷VÁB“Fˆ7V÷VÁBÊ7&VFTFˆ7V÷VÁDg&v÷VÁBÇì∞†êêî'&íÊg&ˆ“ÜÊˆFRÊÊˆFUf«VRíÊf˜$V6ÇÜgVÊ7Fñˆ‚Ü6Ü&7FW"í∞†êêêññbÇı«2ÚÁFW7BÜ6Ü&7FW"íí∞†êêêêñg&v÷VÁBÊVÊD6Üñ∆BÜFˆ7V÷VÁBÊ7&VFUFWáDÊˆFRÜ6Ü&7FW"íì∞†êêêêó&WGW&„∞†êêêó–†êêêñ6ˆÁ7B7‚“Fˆ7V÷VÁBÊ7&VFTV∆V÷VÁBÇw7‚rì∞†êêêó7‚Ê6∆74Ê÷R“vr◊67&ˆ∆¬÷fñ∆≈ıˆ6Ü"s∞†êêêó7‚Á6WDGG&ñ'WFRÇv&ñ÷ÜñFFV‚r¬wG'VRrì∞†êêêó7‚ÁFWáD6ˆÁFVÁB“6Ü&7FW#∞†êêêñg&v÷VÁBÊVÊD6Üñ∆Bá7‚ì∞†êêêñ6Ü&7FW'2ÁW6Çá7‚ì∞†êêó“ì∞†êêñÊˆFRÁ&VÁDÊˆFRÁ&W∆6T6Üñ∆BÜg&v÷VÁB¬ÊˆFRì∞†êó“ì∞††êññbÇ6Ü&7FW'2Ê∆VÊwFÇí&WGW&„∞††êóFWáBÁ6WDGG&ñ'WFRÇv&ñ÷∆&V¬r¬FWáBÁFWáD6ˆÁFVÁBÁ&W∆6RÇı«2≤ˆr¬rríÁG&ñ“Çíì∞†êñ6ˆÁ7B7F'B“÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÁ7F'B¬ÉíííÚ∞†êñ6ˆÁ7BVÊB“÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÊVÊB¬#íííÚ∞†êñ6ˆÁ7B6ˆgFV‚“÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É"¬ÁV÷&W%f«VRá&ˆ˜BÊFF6WBÁ6ˆgFV‚¬Bííì∞†êñ∆WBg&÷R“∞†êñ∆WBFW7G&˜ñVB“f«6S∞††êñgVÊ7Fñˆ‚ñÁBÇí∞†êêñg&÷R“∞†êêññbÜFW7G&˜ñVB«¬&ˆ˜BÊó46ˆÊÊV7FVBí∞†êêêñFW7G&˜íÇì∞†êêêó&WGW&„∞†êêó–††êêñ6ˆÁ7B&V7B“FWáBÊvWD&˜VÊFñÊt6∆ñVÁE&V7BÇì∞†êêñ6ˆÁ7BfñWw˜'DÜVñváB“vñÊF˜rÊñÊÊW$ÜVñváB«¬Fˆ7V÷VÁBÊFˆ7V÷VÁDV∆V÷VÁBÊ6∆ñVÁDÜVñváC∞†êêñ6ˆÁ7B7F'D∆ñÊR“fñWw˜'DÜVñváB¢7F'C∞†êêñ6ˆÁ7BVÊD∆ñÊR“fñWw˜'DÜVñváB¢VÊC∞†êêñ6ˆÁ7BFó7FÊ6R“÷FÇÊ÷ÇÉ¬7F'D∆ñÊR“VÊD∆ñÊR≤&V7BÊÜVñváBì∞†êêñ6ˆÁ7B&ˆw&W72“&VfW'5&VGV6VD÷˜Fñˆ‚Çê†êêêìÚá&V7BÁF˜√“7F'D∆ñÊRÚ¢ê†êêêì¢÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É¬á7F'D∆ñÊR“&V7BÁF˜íÚFó7FÊ6Ríì∞†êêñ6ˆÁ7B˜6óFñˆ‚“&ˆw&W72¢6Ü&7FW'2Ê∆VÊwFÉ∞††êêñ6Ü&7FW'2Êf˜$V6ÇÜgVÊ7Fñˆ‚Ü6Ü&7FW"¬ñÊFWÇí∞†êêêñ6ˆÁ7Bfñ∆¬“6ˆgFV‚‚ †êêêêìÚ÷FÇÊ÷ÇÉ¬÷FÇÊ÷ñ‚É¬á˜6óFñˆ‚“ñÊFWÇ≤6ˆgFV‚íÚ6ˆgFV‚íê†êêêêì¢ÜñÊFWÇ¬˜6óFñˆ‚Ú¢ì∞†êêêñ6Ü&7FW"Á7Gñ∆RÁ6WE&˜W'GíÇr“÷r÷6Ü"÷fñ∆¬r¬fñ∆¬ÁFÙfóÜVBÉ2íì∞†êêêñ6Ü&7FW"Á7Gñ∆RÁ6WE&˜W'GíÇr“÷r÷6Ü"÷7FófRr¬Üfñ∆¬¢íÁFÙfóÜVBÉí≤rRrì∞†êêêñ6Ü&7FW"Á7Gñ∆RÁ6WE&˜W'GíÇr“÷r÷6Ü"÷◊WFVBr¬ÇÉ“fñ∆¬í¢íÁFÙfóÜVBÉí≤rRrì∞†êêó“ì∞†êó–††êñgVÊ7Fñˆ‚&WVW7EñÁBÇí∞†êêññbÇg&÷Ríg&÷R“vñÊF˜rÁ&WVW7DÊñ÷Fñˆ‰g&÷RáñÁBì∞†êó–††êñgVÊ7Fñˆ‚FW7G&˜íÇí∞†êêññbÜFW7G&˜ñVBí&WGW&„∞†êêñFW7G&˜ñVB“G'VS∞†êêóvñÊF˜rÁ&V÷˜fTWfVÁD∆ó7FVÊW"Çw67&ˆ∆¬r¬&WVW7EñÁBì∞†êêóvñÊF˜rÁ&V÷˜fTWfVÁD∆ó7FVÊW"Çw&W6ó¶Rr¬&WVW7EñÁBì∞†êêññbÜg&÷RívñÊF˜rÊ6Ê6VƒÊñ÷Fñˆ‰g&÷RÜg&÷Rì∞†êó–††êóvñÊF˜rÊFDWfVÁD∆ó7FVÊW"Çw67&ˆ∆¬r¬&WVW7EñÁB¬≤76ófS¢G'VR“ì∞†êóvñÊF˜rÊFDWfVÁD∆ó7FVÊW"Çw&W6ó¶Rr¬&WVW7EñÁB¬≤76ófS¢G'VR“ì∞†êóvñÊF˜rÁ&WVW7DÊñ÷Fñˆ‰g&÷RáñÁBì∞†ó–††ñgVÊ7Fñˆ‚ñÊóEvóFÜñ‚á66˜Rí∞†êñ6ˆÁ7B6ˆÁFWáB“66˜Rbb66˜RÁVW'ï6V∆V7F˜$∆¬Ú66˜R¢Fˆ7V÷VÁC∞†êññbÜ6ˆÁFWáBÊ÷F6ÜW2bb6ˆÁFWáBÊ÷F6ÜW2Çu∂FF÷r◊vÜVV≈“rííñÊóEvÜVV¬Ü6ˆÁFWáBì∞†êññbÜ6ˆÁFWáBÊ÷F6ÜW2bb6ˆÁFWáBÊ÷F6ÜW2Çu∂FF÷r÷v∆∆W'ï“rííñÊóDv∆∆W'íÜ6ˆÁFWáBì∞†êññbÜ6ˆÁFWáBÊ÷F6ÜW2bb6ˆÁFWáBÊ÷F6ÜW2Çu∂FF÷r◊67&ˆ∆¬÷fñ∆≈“rííñÊóE67&ˆ∆ƒfñ∆¬Ü6ˆÁFWáBì∞†êñ6ˆÁFWáBÁVW'ï6V∆V7F˜$∆¬Çu∂FF÷r◊vÜVV≈“ríÊf˜$V6ÇÜñÊóEvÜVV¬ì∞†êñ6ˆÁFWáBÁVW'ï6V∆V7F˜$∆¬Çu∂FF÷r÷v∆∆W'ï“ríÊf˜$V6ÇÜñÊóDv∆∆W'íì∞†êñ6ˆÁFWáBÁVW'ï6V∆V7F˜$∆¬Çu∂FF÷r◊67&ˆ∆¬÷fñ∆≈“ríÊf˜$V6ÇÜñÊóE67&ˆ∆ƒfñ∆¬ì∞†ó–††ñgVÊ7Fñˆ‚&Vvó7FW$V∆V÷VÁF˜$Üˆˆ∑2Çí∞†êññbÇvñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊB«¬vñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBÊÜˆˆ∑2í&WGW&„∞†êóvñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBÊÜˆˆ∑2ÊFD7Fñˆ‚Ä†êêívg&ˆÁFVÊBˆV∆V÷VÁE˜&VGíˆÊñ÷Fñˆ‚◊vñFvWG2÷ñÁFW&7FófR◊vÜVV¬ÊFVfV«Br¿†êêñgVÊ7Fñˆ‚ÇG66˜Rí≤ñÊóEvóFÜñ‚ÇG66˜RbbG66˜U≥“ì≤–†êíì∞†êóvñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBÊÜˆˆ∑2ÊFD7Fñˆ‚Ä†êêívg&ˆÁFVÊBˆV∆V÷VÁE˜&VGíˆÊñ÷Fñˆ‚◊vñFvWG2◊67&ˆ∆¬÷v∆∆W'íÊFVfV«Br¿†êêñgVÊ7Fñˆ‚ÇG66˜Rí≤ñÊóEvóFÜñ‚ÇG66˜RbbG66˜U≥“ì≤–†êíì∞†êóvñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBÊÜˆˆ∑2ÊFD7Fñˆ‚Ä†êêívg&ˆÁFVÊBˆV∆V÷VÁE˜&VGíˆÊñ÷Fñˆ‚◊vñFvWG2◊67&ˆ∆¬÷fñ∆¬ÊFVfV«Br¿†êêñgVÊ7Fñˆ‚ÇG66˜Rí≤ñÊóEvóFÜñ‚ÇG66˜RbbG66˜U≥“ì≤–†êíì∞†ó–††ññbÜFˆ7V÷VÁBÁ&VGï7FFR””“v∆ˆFñÊrrí∞†êñFˆ7V÷VÁBÊFDWfVÁD∆ó7FVÊW"ÇtDÙ‘6ˆÁFVÁD∆ˆFVBr¬gVÊ7Fñˆ‚Çí≤ñÊóEvóFÜñ‚ÜFˆ7V÷VÁBì≤“¬≤ˆÊ6S¢G'VR“ì∞†ó“V«6R∞†êññÊóEvóFÜñ‚ÜFˆ7V÷VÁBì∞†ó–††óvñÊF˜rÊFDWfVÁD∆ó7FVÊW"ÇvV∆V÷VÁF˜"ˆg&ˆÁFVÊBˆñÊóBr¬&Vvó7FW$V∆V÷VÁF˜$Üˆˆ∑2¬≤ˆÊ6S¢G'VR“ì∞†ññbávñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBbbvñÊF˜rÊV∆V÷VÁF˜$g&ˆÁFVÊBÊÜˆˆ∑2í&Vvó7FW$V∆V÷VÁF˜$Üˆˆ∑2Çì∞ß“íÇì∞
+(function () {
+	'use strict';
+
+	const initializedWheels = new WeakSet();
+	const initializedGalleries = new WeakSet();
+	const initializedScrollFills = new WeakSet();
+	const stickyContextCounts = new WeakMap();
+
+	function acquireStickyContext(element, className) {
+		let counts = stickyContextCounts.get(element);
+		if (!counts) {
+			counts = {};
+			stickyContextCounts.set(element, counts);
+		}
+		counts[className] = (counts[className] || 0) + 1;
+		element.classList.add(className);
+	}
+
+	function releaseStickyContext(element, className) {
+		const counts = stickyContextCounts.get(element);
+		if (!counts || !counts[className]) return;
+		counts[className] -= 1;
+		if (counts[className] === 0) {
+			delete counts[className];
+			element.classList.remove(className);
+		}
+	}
+
+	function numberValue(value, fallback) {
+		const parsed = Number(value);
+		return Number.isFinite(parsed) ? parsed : fallback;
+	}
+
+	function prefersReducedMotion() {
+		return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	}
+
+	function initWheel(root) {
+		if (!root || initializedWheels.has(root)) return;
+
+		const disc = root.querySelector('.aw-wheel__stage > img:not(.aw-wheel__pointer)');
+		const button = root.querySelector('.aw-wheel__button');
+		const label = root.querySelector('.aw-wheel__button-label');
+		const result = root.querySelector('.aw-wheel__result');
+		let outcomes;
+
+		try {
+			outcomes = JSON.parse(root.dataset.results || '[]').filter(function (item) {
+				return item && Number.isFinite(Number(item.angle)) && typeof item.text === 'string' && item.text.trim();
+			});
+		} catch (error) {
+			outcomes = [];
+		}
+
+		if (!disc || !button || !label || !result || !outcomes.length) return;
+		initializedWheels.add(root);
+
+		let rotation = 0;
+		let animation = null;
+		const duration = Math.max(200, numberValue(root.dataset.duration, 5200));
+		const minimumTurns = Math.max(0, Math.floor(numberValue(root.dataset.minTurns, 5)));
+		const maximumTurns = Math.max(minimumTurns, Math.floor(numberValue(root.dataset.maxTurns, 7)));
+		const resultDuration = Math.max(0, numberValue(root.dataset.resultDuration, 500));
+		const resultAnimation = ['fade', 'slide-up', 'zoom', 'none'].includes(root.dataset.resultAnimation)
+			? root.dataset.resultAnimation
+			: 'slide-up';
+
+		result.dataset.animation = resultAnimation;
+		result.style.setProperty('--aw-result-duration', resultDuration + 'ms');
+
+		button.addEventListener('click', function () {
+			if (button.disabled) return;
+
+			const outcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+			const normalizedRotation = ((rotation % 360) + 360) % 360;
+			const normalizedTarget = ((numberValue(outcome.angle, 0) % 360) + 360) % 360;
+			const correction = (normalizedTarget - normalizedRotation + 360) % 360;
+			const turns = minimumTurns + Math.floor(Math.random() * (maximumTurns - minimumTurns + 1));
+			const target = rotation + (turns * 360) + correction;
+
+			button.disabled = true;
+			button.classList.add('is-spinning');
+			label.textContent = root.dataset.spinningText || 'La ruleta est√° girando‚Ä¶';
+			result.classList.remove('is-visible');
+			result.textContent = '';
+
+			if (animation && typeof animation.cancel === 'function') animation.cancel();
+
+			const finish = function () {
+				rotation = target;
+				disc.style.transform = 'rotate(' + target + 'deg)';
+				button.disabled = false;
+				button.classList.remove('is-spinning');
+				label.textContent = root.dataset.repeatText || 'Tira de nuevo la ruleta';
+				result.textContent = outcome.text;
+				void result.offsetWidth;
+				result.classList.add('is-visible');
+				animation = null;
+			};
+
+			if (prefersReducedMotion() || typeof disc.animate !== 'function') {
+				finish();
+				return;
+			}
+
+			animation = disc.animate(
+				[
+					{ transform: 'rotate(' + rotation + 'deg)' },
+					{ transform: 'rotate(' + target + 'deg)' }
+				],
+				{
+					duration: duration,
+					easing: 'cubic-bezier(.08,.72,.12,1)',
+					fill: 'forwards'
+				}
+			);
+			animation.addEventListener('finish', finish, { once: true });
+		});
+	}
+
+	function initGallery(root) {
+		if (!root || initializedGalleries.has(root)) return;
+
+		const sticky = root.querySelector('.aw-gallery__sticky');
+		const viewport = root.querySelector('.aw-gallery__viewport');
+		const track = root.querySelector('.aw-gallery__track');
+		if (!sticky || !viewport || !track) return;
+		initializedGalleries.add(root);
+
+		const breakpoint = Math.max(320, Math.min(1200, numberValue(root.dataset.mobileBreakpoint, 767)));
+		const factor = Math.max(0.5, Math.min(3, numberValue(root.dataset.scrollFactor, 1)));
+		const reverse = root.dataset.direction === 'left-to-right';
+		let frame = 0;
+		let distance = 0;
+		let resizeTimer = 0;
+		let resizeObserver = null;
+		let destroyed = false;
+		let stickyAncestors = [];
+
+		function releaseStickyAncestors() {
+			stickyAncestors.forEach(function (context) {
+				releaseStickyContext(context.element, context.className);
+			});
+			stickyAncestors = [];
+		}
+
+		function prepareStickyAncestors() {
+			releaseStickyAncestors();
+			let ancestor = root.parentElement;
+			while (ancestor) {
+				const style = window.getComputedStyle(ancestor);
+				const overflow = [style.overflow, style.overflowX, style.overflowY].join(' ');
+				if (/(auto|scroll|hidden|clip|overlay)/.test(overflow)) {
+					const isPageRoot = ancestor === document.body || ancestor === document.documentElement;
+					const className = isPageRoot ? 'aw-gallery-page-context' : 'aw-gallery-sticky-context';
+					acquireStickyContext(ancestor, className);
+					stickyAncestors.push({ element: ancestor, className: className });
+				}
+				if (ancestor === document.documentElement) break;
+				ancestor = ancestor.parentElement;
+			}
+		}
+
+		function isSwipeMode() {
+			return prefersReducedMotion() || window.innerWidth <= breakpoint;
+		}
+
+		function paint() {
+			frame = 0;
+			if (destroyed || !root.isConnected) {
+				destroy();
+				return;
+			}
+
+			if (root.classList.contains('is-swipe')) {
+				track.style.transform = '';
+				return;
+			}
+
+			const travel = Math.max(1, root.offsetHeight - sticky.offsetHeight);
+			const rootTop = root.getBoundingClientRect().top + window.scrollY;
+			const progress = Math.max(0, Math.min(1, (window.scrollY - rootTop) / travel));
+			const translate = reverse ? -distance * (1 - progress) : -distance * progress;
+			track.style.transform = 'translate3d(' + translate + 'px,0,0)';
+		}
+
+		function measure() {
+			if (destroyed || !root.isConnected) {
+				destroy();
+				return;
+			}
+
+			const swipe = isSwipeMode();
+			root.classList.toggle('is-swipe', swipe);
+			track.style.transform = '';
+
+			if (swipe) {
+				releaseStickyAncestors();
+				root.style.height = '';
+				distance = 0;
+				return;
+			}
+
+			prepareStickyAncestors();
+			const viewportWidth = viewport.clientWidth;
+			distance = Math.max(0, track.scrollWidth - viewportWidth);
+			root.style.height = (sticky.offsetHeight + (distance * factor)) + 'px';
+			paint();
+		}
+
+		function requestPaint() {
+			if (!frame) frame = window.requestAnimationFrame(paint);
+		}
+
+		function requestMeasure() {
+			window.clearTimeout(resizeTimer);
+			resizeTimer = window.setTimeout(measure, 120);
+		}
+
+		function destroy() {
+			if (destroyed) return;
+			destroyed = true;
+			window.removeEventListener('scroll', requestPaint);
+			window.removeEventListener('resize', requestMeasure);
+			if (resizeObserver) resizeObserver.disconnect();
+			releaseStickyAncestors();
+			if (frame) window.cancelAnimationFrame(frame);
+			window.clearTimeout(resizeTimer);
+		}
+
+		window.addEventListener('scroll', requestPaint, { passive: true });
+		window.addEventListener('resize', requestMeasure, { passive: true });
+
+		if ('ResizeObserver' in window) {
+			resizeObserver = new ResizeObserver(requestMeasure);
+			resizeObserver.observe(track);
+		}
+
+		Array.prototype.forEach.call(track.querySelectorAll('img'), function (image) {
+			if (!image.complete) image.addEventListener('load', requestMeasure, { once: true });
+		});
+
+		window.requestAnimationFrame(measure);
+	}
+
+	function initScrollFill(root) {
+		if (!root || initializedScrollFills.has(root)) return;
+
+		let text = root.querySelector('.aw-scroll-fill__text');
+		if (!text && root.dataset.awFillTarget === 'heading') {
+			text = root.querySelector('.elementor-heading-title');
+		}
+		if (!text && root.dataset.awFillTarget === 'text-editor') {
+			text = root.querySelector('.elementor-widget-container');
+		}
+		if (!text) return;
+		text.classList.add('aw-scroll-fill__text');
+		initializedScrollFills.add(root);
+
+		const excludedTags = ['SCRIPT', 'STYLE', 'NOSCRIPT'];
+		const walker = document.createTreeWalker(text, NodeFilter.SHOW_TEXT);
+		const textNodes = [];
+		let current;
+
+		while ((current = walker.nextNode())) {
+			if (current.nodeValue && current.nodeValue.length && !excludedTags.includes(current.parentElement.tagName)) {
+				textNodes.push(current);
+			}
+		}
+
+		const characters = [];
+		textNodes.forEach(function (node) {
+			const fragment = document.createDocumentFragment();
+			Array.from(node.nodeValue).forEach(function (character) {
+				if (/\s/.test(character)) {
+					fragment.appendChild(document.createTextNode(character));
+					return;
+				}
+				const span = document.createElement('span');
+				span.className = 'aw-scroll-fill__char';
+				span.setAttribute('aria-hidden', 'true');
+				span.textContent = character;
+				fragment.appendChild(span);
+				characters.push(span);
+			});
+			node.parentNode.replaceChild(fragment, node);
+		});
+
+		if (!characters.length) return;
+
+		text.setAttribute('aria-label', text.textContent.replace(/\s+/g, ' ').trim());
+		const start = Math.max(0, Math.min(100, numberValue(root.dataset.start, 80))) / 100;
+		const end = Math.max(0, Math.min(100, numberValue(root.dataset.end, 20))) / 100;
+		const soften = Math.max(0, Math.min(12, numberValue(root.dataset.soften, 4)));
+		let frame = 0;
+		let destroyed = false;
+
+		function paint() {
+			frame = 0;
+			if (destroyed || !root.isConnected) {
+				destroy();
+				return;
+			}
+
+			const rect = text.getBoundingClientRect();
+			const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+			const startLine = viewportHeight * start;
+			const endLine = viewportHeight * end;
+			const distance = Math.max(1, startLine - endLine + rect.height);
+			const progress = prefersReducedMotion()
+				? (rect.top <= startLine ? 1 : 0)
+				: Math.max(0, Math.min(1, (startLine - rect.top) / distance));
+			const position = progress * characters.length;
+
+			characters.forEach(function (character, index) {
+				const fill = soften > 0
+					? Math.max(0, Math.min(1, (position - index + soften) / soften))
+					: (index < position ? 1 : 0);
+				character.style.setProperty('--aw-char-fill', fill.toFixed(3));
+				character.style.setProperty('--aw-char-active', (fill * 100).toFixed(1) + '%');
+				character.style.setProperty('--aw-char-muted', ((1 - fill) * 100).toFixed(1) + '%');
+			});
+		}
+
+		function requestPaint() {
+			if (!frame) frame = window.requestAnimationFrame(paint);
+		}
+
+		function destroy() {
+			if (destroyed) return;
+			destroyed = true;
+			window.removeEventListener('scroll', requestPaint);
+			window.removeEventListener('resize', requestPaint);
+			if (frame) window.cancelAnimationFrame(frame);
+		}
+
+		window.addEventListener('scroll', requestPaint, { passive: true });
+		window.addEventListener('resize', requestPaint, { passive: true });
+		window.requestAnimationFrame(paint);
+	}
+
+	function initWithin(scope) {
+		const context = scope && scope.querySelectorAll ? scope : document;
+		if (context.matches && context.matches('[data-aw-wheel]')) initWheel(context);
+		if (context.matches && context.matches('[data-aw-gallery]')) initGallery(context);
+		if (context.matches && context.matches('[data-aw-scroll-fill]')) initScrollFill(context);
+		context.querySelectorAll('[data-aw-wheel]').forEach(initWheel);
+		context.querySelectorAll('[data-aw-gallery]').forEach(initGallery);
+		context.querySelectorAll('[data-aw-scroll-fill]').forEach(initScrollFill);
+	}
+
+	function registerElementorHooks() {
+		if (!window.elementorFrontend || !window.elementorFrontend.hooks) return;
+		window.elementorFrontend.hooks.addAction(
+			'frontend/element_ready/animation-widgets-interactive-wheel.default',
+			function ($scope) { initWithin($scope && $scope[0]); }
+		);
+		window.elementorFrontend.hooks.addAction(
+			'frontend/element_ready/animation-widgets-scroll-gallery.default',
+			function ($scope) { initWithin($scope && $scope[0]); }
+		);
+		window.elementorFrontend.hooks.addAction(
+			'frontend/element_ready/animation-widgets-scroll-fill.default',
+			function ($scope) { initWithin($scope && $scope[0]); }
+		);
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', function () { initWithin(document); }, { once: true });
+	} else {
+		initWithin(document);
+	}
+
+	window.addEventListener('elementor/frontend/init', registerElementorHooks, { once: true });
+	if (window.elementorFrontend && window.elementorFrontend.hooks) registerElementorHooks();
+})();
