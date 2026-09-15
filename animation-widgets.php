@@ -10,7 +10,7 @@
  * Requires PHP: 7.4
  * Requires Plugins: elementor
  * Elementor tested up to: 3.24
- * GitHub Plugin URI: javihorus/animation-widgets
+ * GitHub Plugin URI: https://github.com/javihorus/animation-widgets
  * Primary Branch:    main
  */
 
