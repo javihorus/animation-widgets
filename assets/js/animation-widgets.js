@@ -3,7 +3,8 @@
 
 	const initializedWheels = new WeakSet();
 	const initializedGalleries = new WeakSet();
-	const initializedScrollFills = new WeakSet();
+	const initializedTestimonials = new WeakSet();
+	const initializedPrograms = new WeakSet();
 	const stickyContextCounts = new WeakMap();
 
 	function acquireStickyContext(element, className) {
@@ -243,110 +244,349 @@
 		window.requestAnimationFrame(measure);
 	}
 
-	function initScrollFill(root) {
-		if (!root || initializedScrollFills.has(root)) return;
+	function initTestimonials(root) {
+		if (!root || initializedTestimonials.has(root)) return;
 
-		let text = root.querySelector('.aw-scroll-fill__text');
-		if (!text && root.dataset.awFillTarget === 'heading') {
-			text = root.querySelector('.elementor-heading-title');
+		const slides = Array.prototype.slice.call(root.querySelectorAll('[data-aw-testimonial-slide]'));
+		if (!slides.length) return;
+		initializedTestimonials.add(root);
+
+		const dots = Array.prototype.slice.call(root.querySelectorAll('[data-aw-dot]'));
+		const previous = root.querySelector('[data-aw-prev]');
+		const next = root.querySelector('[data-aw-next]');
+		const reducedMotion = prefersReducedMotion();
+		const autoplay = root.dataset.autoplay === 'true' && !reducedMotion && slides.length > 1;
+		const pauseHover = root.dataset.pauseHover === 'true';
+		const interval = Math.max(1500, numberValue(root.dataset.interval, 4500));
+		const duration = reducedMotion ? 0 : Math.max(100, numberValue(root.dataset.duration, 700));
+		const resumeDelay = Math.max(500, numberValue(root.dataset.resumeDelay, 3500));
+		let index = 0;
+		let timer = 0;
+		let hovering = false;
+		let pointerId = null;
+		let pointerStartX = 0;
+		let pointerStartY = 0;
+
+		root.style.setProperty('--aw-testimonial-duration', duration + 'ms');
+
+		function stopTimer() {
+			window.clearTimeout(timer);
+			timer = 0;
 		}
-		if (!text && root.dataset.awFillTarget === 'text-editor') {
-			text = root.querySelector('.elementor-widget-container');
-		}
-		if (!text) return;
-		text.classList.add('aw-scroll-fill__text');
-		initializedScrollFills.add(root);
 
-		const excludedTags = ['SCRIPT', 'STYLE', 'NOSCRIPT'];
-		const walker = document.createTreeWalker(text, NodeFilter.SHOW_TEXT);
-		const textNodes = [];
-		let current;
-
-		while ((current = walker.nextNode())) {
-			if (current.nodeValue && current.nodeValue.length && !excludedTags.includes(current.parentElement.tagName)) {
-				textNodes.push(current);
-			}
+		function schedule(delay) {
+			stopTimer();
+			if (!autoplay || hovering || document.hidden) return;
+			timer = window.setTimeout(function () {
+				if (!root.isConnected) return;
+				show(index + 1, false);
+			}, delay);
 		}
 
-		const characters = [];
-		textNodes.forEach(function (node) {
-			const fragment = document.createDocumentFragment();
-			Array.from(node.nodeValue).forEach(function (character) {
-				if (/\s/.test(character)) {
-					fragment.appendChild(document.createTextNode(character));
-					return;
-				}
-				const span = document.createElement('span');
-				span.className = 'aw-scroll-fill__char';
-				span.setAttribute('aria-hidden', 'true');
-				span.textContent = character;
-				fragment.appendChild(span);
-				characters.push(span);
+		function show(target, userInitiated) {
+			index = (target % slides.length + slides.length) % slides.length;
+			slides.forEach(function (slide, slideIndex) {
+				const active = slideIndex === index;
+				slide.classList.toggle('is-active', active);
+				slide.setAttribute('aria-hidden', active ? 'false' : 'true');
 			});
-			node.parentNode.replaceChild(fragment, node);
+			dots.forEach(function (dot, dotIndex) {
+				const active = dotIndex === index;
+				dot.classList.toggle('is-active', active);
+				dot.setAttribute('aria-current', active ? 'true' : 'false');
+			});
+			schedule(userInitiated ? resumeDelay : interval);
+		}
+
+		if (previous) previous.addEventListener('click', function () { show(index - 1, true); });
+		if (next) next.addEventListener('click', function () { show(index + 1, true); });
+		dots.forEach(function (dot) {
+			dot.addEventListener('click', function () {
+				show(numberValue(dot.dataset.awDot, 0), true);
+			});
 		});
 
-		if (!characters.length) return;
-
-		text.setAttribute('aria-label', text.textContent.replace(/\s+/g, ' ').trim());
-		const start = Math.max(0, Math.min(100, numberValue(root.dataset.start, 80))) / 100;
-		const end = Math.max(0, Math.min(100, numberValue(root.dataset.end, 20))) / 100;
-		const soften = Math.max(0, Math.min(12, numberValue(root.dataset.soften, 4)));
-		let frame = 0;
-		let destroyed = false;
-
-		function paint() {
-			frame = 0;
-			if (destroyed || !root.isConnected) {
-				destroy();
-				return;
+		root.addEventListener('pointerdown', function (event) {
+			if (event.pointerType === 'mouse' && event.button !== 0) return;
+			pointerId = event.pointerId;
+			pointerStartX = event.clientX;
+			pointerStartY = event.clientY;
+			stopTimer();
+		});
+		root.addEventListener('pointerup', function (event) {
+			if (pointerId !== event.pointerId) return;
+			const deltaX = event.clientX - pointerStartX;
+			const deltaY = event.clientY - pointerStartY;
+			pointerId = null;
+			if (Math.abs(deltaX) >= 42 && Math.abs(deltaX) > Math.abs(deltaY)) {
+				show(index + (deltaX < 0 ? 1 : -1), true);
+			} else {
+				schedule(resumeDelay);
 			}
+		});
+		root.addEventListener('pointercancel', function () {
+			pointerId = null;
+			schedule(resumeDelay);
+		});
 
-			const rect = text.getBoundingClientRect();
-			const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-			const startLine = viewportHeight * start;
-			const endLine = viewportHeight * end;
-			const distance = Math.max(1, startLine - endLine + rect.height);
-			const progress = prefersReducedMotion()
-				? (rect.top <= startLine ? 1 : 0)
-				: Math.max(0, Math.min(1, (startLine - rect.top) / distance));
-			const position = progress * characters.length;
-
-			characters.forEach(function (character, index) {
-				const fill = soften > 0
-					? Math.max(0, Math.min(1, (position - index + soften) / soften))
-					: (index < position ? 1 : 0);
-				character.style.setProperty('--aw-char-fill', fill.toFixed(3));
-				character.style.setProperty('--aw-char-active', (fill * 100).toFixed(1) + '%');
-				character.style.setProperty('--aw-char-muted', ((1 - fill) * 100).toFixed(1) + '%');
+		if (pauseHover) {
+			root.addEventListener('mouseenter', function () {
+				hovering = true;
+				stopTimer();
+			});
+			root.addEventListener('mouseleave', function () {
+				hovering = false;
+				schedule(resumeDelay);
 			});
 		}
 
-		function requestPaint() {
-			if (!frame) frame = window.requestAnimationFrame(paint);
+		document.addEventListener('visibilitychange', function () {
+			if (document.hidden) stopTimer();
+			else schedule(interval);
+		});
+
+		show(0, false);
+	}
+
+	function initPrograms(root) {
+		if (!root || initializedPrograms.has(root)) return;
+
+		const viewport = root.querySelector('[data-aw-programs-viewport]');
+		const track = root.querySelector('[data-aw-programs-track]');
+		const group = root.querySelector('[data-aw-programs-group]');
+		if (!viewport || !track || !group) return;
+		const originalCards = Array.prototype.slice.call(group.querySelectorAll('[data-aw-program-card]'));
+		if (!originalCards.length) return;
+		initializedPrograms.add(root);
+
+		const dots = Array.prototype.slice.call(root.querySelectorAll('[data-aw-dot]'));
+		const previous = root.querySelector('[data-aw-prev]');
+		const next = root.querySelector('[data-aw-next]');
+		const reducedMotion = prefersReducedMotion();
+		const autoplay = root.dataset.autoplay === 'true' && !reducedMotion;
+		const speed = Math.max(5, numberValue(root.dataset.speed, 25));
+		const direction = root.dataset.direction === 'right' ? -1 : 1;
+		const pauseHover = root.dataset.pauseHover === 'true';
+		const resumeDelay = Math.max(500, numberValue(root.dataset.resumeDelay, 3000));
+		let groupWidth = 1;
+		let cardStep = 1;
+		let offset = 0;
+		let lastTime = 0;
+		let frame = 0;
+		let hovering = false;
+		let visible = true;
+		let dragging = false;
+		let pointerId = null;
+		let pointerStartX = 0;
+		let pointerStartY = 0;
+		let pointerStartOffset = 0;
+		let dragged = false;
+		let pausedUntil = 0;
+		let targetOffset = null;
+		let suppressClickUntil = 0;
+		let lastPointerType = 'mouse';
+		let resizeTimer = 0;
+		let activeDot = -1;
+
+		function cloneForLoop(node, filler) {
+			const clone = node.cloneNode(true);
+			clone.setAttribute('aria-hidden', 'true');
+			if (clone.matches('a, button, [tabindex]')) clone.setAttribute('tabindex', '-1');
+			if (filler) clone.setAttribute('data-aw-program-filler', '');
+			clone.querySelectorAll('a, button, [tabindex]').forEach(function (focusable) {
+				focusable.setAttribute('tabindex', '-1');
+			});
+			return clone;
 		}
 
-		function destroy() {
-			if (destroyed) return;
-			destroyed = true;
-			window.removeEventListener('scroll', requestPaint);
-			window.removeEventListener('resize', requestPaint);
-			if (frame) window.cancelAnimationFrame(frame);
+		function normalize(value) {
+			return groupWidth > 0 ? ((value % groupWidth) + groupWidth) % groupWidth : 0;
 		}
 
-		window.addEventListener('scroll', requestPaint, { passive: true });
-		window.addEventListener('resize', requestPaint, { passive: true });
-		window.requestAnimationFrame(paint);
+		function updateDot() {
+			if (!dots.length || !originalCards.length) return;
+			const normalized = normalize(offset);
+			const nextActive = Math.round(normalized / Math.max(1, cardStep)) % originalCards.length;
+			if (nextActive === activeDot) return;
+			activeDot = nextActive;
+			dots.forEach(function (dot, dotIndex) {
+				const active = dotIndex === activeDot;
+				dot.classList.toggle('is-active', active);
+				dot.setAttribute('aria-current', active ? 'true' : 'false');
+			});
+		}
+
+		function render() {
+			track.style.transform = 'translate3d(' + (-normalize(offset)) + 'px,0,0)';
+			updateDot();
+		}
+
+		function measure() {
+			const oldWidth = groupWidth;
+			const oldProgress = oldWidth > 1 ? normalize(offset) / oldWidth : 0;
+			track.querySelectorAll('[data-aw-program-clone]').forEach(function (clone) { clone.remove(); });
+			group.querySelectorAll('[data-aw-program-filler]').forEach(function (clone) { clone.remove(); });
+
+			let guard = 0;
+			while (group.scrollWidth < viewport.clientWidth + (originalCards[0].offsetWidth || 1) && guard < 20) {
+				originalCards.forEach(function (card) { group.appendChild(cloneForLoop(card, true)); });
+				guard += 1;
+			}
+
+			groupWidth = Math.max(1, group.getBoundingClientRect().width);
+			const duplicate = group.cloneNode(true);
+			duplicate.setAttribute('data-aw-program-clone', '');
+			duplicate.setAttribute('aria-hidden', 'true');
+			duplicate.querySelectorAll('a, button, [tabindex]').forEach(function (focusable) { focusable.setAttribute('tabindex', '-1'); });
+			track.appendChild(duplicate);
+			const firstCard = originalCards[0];
+			const secondCard = originalCards[1];
+			cardStep = secondCard ? Math.abs(secondCard.offsetLeft - firstCard.offsetLeft) : firstCard.offsetWidth;
+			offset = oldProgress * groupWidth;
+			render();
+		}
+
+		function requestMeasure() {
+			window.clearTimeout(resizeTimer);
+			resizeTimer = window.setTimeout(measure, 120);
+		}
+
+		function animate(time) {
+			if (!root.isConnected) return;
+			if (!lastTime) lastTime = time;
+			const delta = Math.min(64, time - lastTime);
+			lastTime = time;
+
+			if (targetOffset !== null) {
+				const difference = targetOffset - offset;
+				const portion = Math.min(1, delta / 280);
+				offset += difference * portion;
+				if (Math.abs(difference) < .5) {
+					offset = targetOffset;
+					targetOffset = null;
+					pausedUntil = time + resumeDelay;
+				}
+			} else if (autoplay && visible && !hovering && !dragging && time >= pausedUntil) {
+				offset += direction * speed * delta / 1000;
+			}
+			render();
+			frame = window.requestAnimationFrame(animate);
+		}
+
+		function moveOne(amount) {
+			targetOffset = offset + amount * cardStep;
+			pausedUntil = performance.now() + resumeDelay;
+		}
+
+		if (previous) previous.addEventListener('click', function () { moveOne(-1); });
+		if (next) next.addEventListener('click', function () { moveOne(1); });
+		dots.forEach(function (dot) {
+			dot.addEventListener('click', function () {
+				const selected = Math.max(0, Math.min(originalCards.length - 1, numberValue(dot.dataset.awDot, 0)));
+				const desired = selected * cardStep;
+				const cycle = Math.round((offset - desired) / groupWidth);
+				targetOffset = desired + cycle * groupWidth;
+				pausedUntil = performance.now() + resumeDelay;
+			});
+		});
+
+		viewport.addEventListener('pointerdown', function (event) {
+			if (event.pointerType === 'mouse' && event.button !== 0) return;
+			lastPointerType = event.pointerType || 'mouse';
+			pointerId = event.pointerId;
+			pointerStartX = event.clientX;
+			pointerStartY = event.clientY;
+			pointerStartOffset = offset;
+			dragged = false;
+			targetOffset = null;
+		});
+		viewport.addEventListener('pointermove', function (event) {
+			if (pointerId !== event.pointerId) return;
+			const deltaX = event.clientX - pointerStartX;
+			const deltaY = event.clientY - pointerStartY;
+			if (!dragging && Math.abs(deltaX) > 6 && Math.abs(deltaX) > Math.abs(deltaY)) {
+				dragging = true;
+				dragged = true;
+				viewport.classList.add('is-dragging');
+				// Capture only after a real horizontal drag starts. Capturing on pointerdown
+				// retargets a normal click to the viewport and prevents program links from opening.
+				if (viewport.setPointerCapture) {
+					try { viewport.setPointerCapture(event.pointerId); } catch (error) {}
+				}
+			}
+			if (dragging) {
+				offset = pointerStartOffset - deltaX;
+				render();
+			}
+		});
+
+		function finishPointer(event) {
+			if (pointerId !== event.pointerId) return;
+			const wasDragged = dragged;
+			if (viewport.hasPointerCapture && viewport.hasPointerCapture(event.pointerId)) {
+				try { viewport.releasePointerCapture(event.pointerId); } catch (error) {}
+			}
+			pointerId = null;
+			dragging = false;
+			viewport.classList.remove('is-dragging');
+			pausedUntil = performance.now() + resumeDelay;
+			if (wasDragged) suppressClickUntil = performance.now() + 350;
+		}
+
+		viewport.addEventListener('pointerup', finishPointer);
+		viewport.addEventListener('pointercancel', finishPointer);
+		root.addEventListener('click', function (event) {
+			if (performance.now() < suppressClickUntil) {
+				event.preventDefault();
+				event.stopPropagation();
+				return;
+			}
+			if (event.target.closest('a.aw-programs__button, a.aw-programs__summary-button')) return;
+			const card = event.target.closest('[data-aw-program-card]');
+			if (!card || (lastPointerType !== 'touch' && !window.matchMedia('(hover: none)').matches)) return;
+			const willOpen = !card.classList.contains('is-open');
+			root.querySelectorAll('[data-aw-program-card].is-open').forEach(function (openCard) { openCard.classList.remove('is-open'); });
+			card.classList.toggle('is-open', willOpen);
+			pausedUntil = performance.now() + resumeDelay;
+		});
+
+		if (pauseHover) {
+			root.addEventListener('mouseenter', function () { hovering = true; });
+			root.addEventListener('mouseleave', function () {
+				hovering = false;
+				pausedUntil = performance.now() + resumeDelay;
+			});
+		}
+
+		window.addEventListener('resize', requestMeasure, { passive: true });
+		if ('ResizeObserver' in window) {
+			const observer = new ResizeObserver(requestMeasure);
+			observer.observe(viewport);
+		}
+		if ('IntersectionObserver' in window) {
+			const visibilityObserver = new IntersectionObserver(function (entries) {
+				visible = Boolean(entries[0] && entries[0].isIntersecting);
+			});
+			visibilityObserver.observe(root);
+		}
+		group.querySelectorAll('img').forEach(function (image) {
+			if (!image.complete) image.addEventListener('load', requestMeasure, { once: true });
+		});
+
+		measure();
+		frame = window.requestAnimationFrame(animate);
 	}
 
 	function initWithin(scope) {
 		const context = scope && scope.querySelectorAll ? scope : document;
 		if (context.matches && context.matches('[data-aw-wheel]')) initWheel(context);
 		if (context.matches && context.matches('[data-aw-gallery]')) initGallery(context);
-		if (context.matches && context.matches('[data-aw-scroll-fill]')) initScrollFill(context);
+		if (context.matches && context.matches('[data-aw-testimonials]')) initTestimonials(context);
+		if (context.matches && context.matches('[data-aw-programs]')) initPrograms(context);
 		context.querySelectorAll('[data-aw-wheel]').forEach(initWheel);
 		context.querySelectorAll('[data-aw-gallery]').forEach(initGallery);
-		context.querySelectorAll('[data-aw-scroll-fill]').forEach(initScrollFill);
+		context.querySelectorAll('[data-aw-testimonials]').forEach(initTestimonials);
+		context.querySelectorAll('[data-aw-programs]').forEach(initPrograms);
 	}
 
 	function registerElementorHooks() {
@@ -360,7 +600,11 @@
 			function ($scope) { initWithin($scope && $scope[0]); }
 		);
 		window.elementorFrontend.hooks.addAction(
-			'frontend/element_ready/animation-widgets-scroll-fill.default',
+			'frontend/element_ready/animation-widgets-testimonial-carousel.default',
+			function ($scope) { initWithin($scope && $scope[0]); }
+		);
+		window.elementorFrontend.hooks.addAction(
+			'frontend/element_ready/animation-widgets-programs-carousel.default',
 			function ($scope) { initWithin($scope && $scope[0]); }
 		);
 	}

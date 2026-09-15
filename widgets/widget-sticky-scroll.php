@@ -17,7 +17,7 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
     public function get_name()        { return 'glex-sticky-scroll'; }
     public function get_title()       { return 'Sticky Scroll'; }
     public function get_icon()        { return 'eicon-scroll'; }
-    public function get_categories()  { return [ 'general' ]; }
+    public function get_categories()  { return [ 'animation-widgets' ]; }
     public function get_keywords()    { return [ 'sticky', 'scroll', 'glex', 'servicios', 'features' ]; }
 
     // ──────────────────────────────────────────────────────────────────
@@ -182,6 +182,17 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
             'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
         ] );
 
+        $this->add_control( 'mobile_mode', [
+            'label'       => 'Comportamiento en móvil',
+            'description' => 'Elige entre conservar el efecto sticky o mostrar cada imagen seguida de su texto sin animaciones.',
+            'type'        => \Elementor\Controls_Manager::SELECT,
+            'default'     => 'sticky',
+            'options'     => [
+                'sticky'  => 'Sticky animado',
+                'stacked' => 'Imagen + texto, sin animación',
+            ],
+        ] );
+
         $this->add_control( 'col_split', [
             'label'   => 'Ancho columna de texto (%)',
             'type'    => \Elementor\Controls_Manager::SLIDER,
@@ -204,18 +215,97 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
             'range'       => [ 'px' => [ 'min' => 0, 'max' => 200 ] ],
         ] );
 
-        $this->add_control( 'item_height', [
-            'label'   => 'Altura mínima por ítem (vh)',
-            'type'    => \Elementor\Controls_Manager::SLIDER,
-            'default' => [ 'size' => 80 ],
-            'range'   => [ 'px' => [ 'min' => 40, 'max' => 120 ] ],
+        $this->add_responsive_control( 'item_height', [
+            'label'          => 'Altura mínima del texto',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'vh', 'px' ],
+            'default'        => [ 'size' => 80, 'unit' => 'vh' ],
+            'tablet_default' => [ 'size' => 75, 'unit' => 'vh' ],
+            'mobile_default' => [ 'size' => 70, 'unit' => 'vh' ],
+            'range'          => [
+                'vh' => [ 'min' => 0, 'max' => 120 ],
+                'px' => [ 'min' => 0, 'max' => 1200 ],
+            ],
         ] );
 
-        $this->add_control( 'image_height', [
-            'label'   => 'Altura de la imagen (vh)',
-            'type'    => \Elementor\Controls_Manager::SLIDER,
-            'default' => [ 'size' => 82 ],
-            'range'   => [ 'px' => [ 'min' => 40, 'max' => 100 ] ],
+        $this->add_responsive_control( 'image_height', [
+            'label'          => 'Altura de la imagen',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'vh', 'vw', 'px' ],
+            'default'        => [ 'size' => 82, 'unit' => 'vh' ],
+            'tablet_default' => [ 'size' => 70, 'unit' => 'vh' ],
+            'mobile_default' => [ 'size' => 60, 'unit' => 'vw' ],
+            'range'          => [
+                'vh' => [ 'min' => 20, 'max' => 100 ],
+                'vw' => [ 'min' => 20, 'max' => 140 ],
+                'px' => [ 'min' => 100, 'max' => 1200 ],
+            ],
+        ] );
+
+        $this->add_responsive_control( 'content_gap', [
+            'label'          => 'Separación entre los textos',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'px' ],
+            'default'        => [ 'size' => 20, 'unit' => 'px' ],
+            'tablet_default' => [ 'size' => 16, 'unit' => 'px' ],
+            'mobile_default' => [ 'size' => 12, 'unit' => 'px' ],
+            'range'          => [ 'px' => [ 'min' => 0, 'max' => 100 ] ],
+        ] );
+
+        $this->add_responsive_control( 'image_text_gap', [
+            'label'          => 'Separación imagen → texto',
+            'description'    => 'En el diseño móvil apilado, controla el espacio bajo cada imagen.',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'px', 'vh' ],
+            'default'        => [ 'size' => 24, 'unit' => 'px' ],
+            'tablet_default' => [ 'size' => 20, 'unit' => 'px' ],
+            'mobile_default' => [ 'size' => 16, 'unit' => 'px' ],
+            'range'          => [
+                'px' => [ 'min' => 0, 'max' => 200 ],
+                'vh' => [ 'min' => 0, 'max' => 30 ],
+            ],
+        ] );
+
+        $this->add_responsive_control( 'after_text_gap', [
+            'label'          => 'Separación texto → imagen siguiente',
+            'description'    => 'En el diseño móvil apilado, controla el espacio después de cada bloque de texto.',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'px', 'vh' ],
+            'default'        => [ 'size' => 40, 'unit' => 'px' ],
+            'tablet_default' => [ 'size' => 36, 'unit' => 'px' ],
+            'mobile_default' => [ 'size' => 28, 'unit' => 'px' ],
+            'range'          => [
+                'px' => [ 'min' => 0, 'max' => 240 ],
+                'vh' => [ 'min' => 0, 'max' => 30 ],
+            ],
+        ] );
+
+        $this->add_responsive_control( 'last_item_gap', [
+            'label'          => 'Espacio final del último ítem',
+            'description'    => 'Controla únicamente el espacio que queda después del último texto y su botón.',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'px', 'vh' ],
+            'default'        => [ 'size' => 24, 'unit' => 'px' ],
+            'tablet_default' => [ 'size' => 24, 'unit' => 'px' ],
+            'mobile_default' => [ 'size' => 20, 'unit' => 'px' ],
+            'range'          => [
+                'px' => [ 'min' => 0, 'max' => 240 ],
+                'vh' => [ 'min' => 0, 'max' => 30 ],
+            ],
+        ] );
+
+        $this->add_responsive_control( 'sticky_top', [
+            'label'          => 'Separación desde arriba (sticky)',
+            'description'    => 'Mueve hacia abajo la posición en la que queda fijada la imagen. Úsalo también para dejar espacio a una cabecera fija.',
+            'type'           => \Elementor\Controls_Manager::SLIDER,
+            'size_units'     => [ 'px', 'vh' ],
+            'default'        => [ 'size' => 0, 'unit' => 'px' ],
+            'tablet_default' => [ 'size' => 0, 'unit' => 'px' ],
+            'mobile_default' => [ 'size' => 0, 'unit' => 'px' ],
+            'range'          => [
+                'px' => [ 'min' => 0, 'max' => 300 ],
+                'vh' => [ 'min' => 0, 'max' => 30 ],
+            ],
         ] );
 
         $this->add_control( 'image_radius', [
@@ -409,13 +499,43 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
         $transition = $s['transition']                    ?? 'reveal-down';
         $trigger    = ( $s['trigger']['size']             ?? 20 ) / 100;
         $dim        = ( $s['dim_inactive']                ?? 'yes' ) === 'yes';
+        $mobile_mode = ( $s['mobile_mode'] ?? 'sticky' ) === 'stacked' ? 'stacked' : 'sticky';
         $iop        = ( $s['inactive_opacity']['size']    ?? 30  ) / 100;
         $split      = ( $s['col_split']['size']           ?? 48  ) . '%';
         $gap        = ( $s['col_gap']['size']             ?? 48  ) . 'px';
         $pad_x      = ( $s['pad_x']['size']               ?? 80  ) . 'px';
-        $item_h     = ( $s['item_height']['size']         ?? 80  ) . 'vh';
-        $img_h      = ( $s['image_height']['size']        ?? 82  ) . 'vh';
         $radius     = ( $s['image_radius']['size']        ?? 12  ) . 'px';
+
+        // Los valores responsive se imprimen en el CSS del propio widget. Esto
+        // mantiene compatibles los widgets guardados antes de que estos
+        // controles fueran responsive y actualiza la vista previa al instante.
+        $responsive_size = static function( $value, $default_size, $default_unit, $allowed_units ) {
+            $size = isset( $value['size'] ) && is_numeric( $value['size'] ) ? $value['size'] : $default_size;
+            $unit = isset( $value['unit'] ) && in_array( $value['unit'], $allowed_units, true )
+                ? $value['unit']
+                : $default_unit;
+            return $size . $unit;
+        };
+
+        $item_h         = $responsive_size( $s['item_height']          ?? [], 80, 'vh', [ 'vh', 'px' ] );
+        $item_h_tablet  = $responsive_size( $s['item_height_tablet']   ?? [], 75, 'vh', [ 'vh', 'px' ] );
+        $mobile_item_setting = $s['item_height_mobile'] ?? [];
+        if ( isset( $mobile_item_setting['size'] ) && (float) $mobile_item_setting['size'] <= 0 ) {
+            $mobile_item_setting = [];
+        }
+        $item_h_mobile  = $responsive_size( $mobile_item_setting, 70, 'vh', [ 'vh', 'px' ] );
+        $img_h          = $responsive_size( $s['image_height']         ?? [], 82, 'vh', [ 'vh', 'vw', 'px' ] );
+        $img_h_tablet   = $responsive_size( $s['image_height_tablet']  ?? [], 70, 'vh', [ 'vh', 'vw', 'px' ] );
+        $img_h_mobile   = $responsive_size( $s['image_height_mobile']  ?? [], 60, 'vw', [ 'vh', 'vw', 'px' ] );
+        $content_gap    = $responsive_size( $s['content_gap']          ?? [], 20, 'px', [ 'px' ] );
+        $content_gap_t  = $responsive_size( $s['content_gap_tablet']   ?? [], 16, 'px', [ 'px' ] );
+        $content_gap_m  = $responsive_size( $s['content_gap_mobile']   ?? [], 12, 'px', [ 'px' ] );
+        $image_text_m   = $responsive_size( $s['image_text_gap_mobile'] ?? [], 16, 'px', [ 'px', 'vh' ] );
+        $after_text_m   = $responsive_size( $s['after_text_gap_mobile'] ?? [], 28, 'px', [ 'px', 'vh' ] );
+        $last_item_m    = $responsive_size( $s['last_item_gap_mobile']  ?? [], 20, 'px', [ 'px', 'vh' ] );
+        $sticky_top     = $responsive_size( $s['sticky_top']          ?? [], 0, 'px', [ 'px', 'vh' ] );
+        $sticky_top_t   = $responsive_size( $s['sticky_top_tablet']   ?? [], 0, 'px', [ 'px', 'vh' ] );
+        $sticky_top_m   = $responsive_size( $s['sticky_top_mobile']   ?? [], 0, 'px', [ 'px', 'vh' ] );
 
         // ID único por instancia de widget (permite múltiples en la misma página)
         $uid        = 'gss-' . $this->get_id();
@@ -437,27 +557,36 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
 .elementor-widget-glex-sticky-scroll > .elementor-widget-container {
   overflow:visible!important;
 }
+.gss-sticky-context{overflow:visible!important;}
 #<?php echo $uid ?>{
   display:grid;
   grid-template-columns:<?php echo $split ?> 1fr;
-  grid-template-rows:repeat(<?php echo $N ?>,auto);
+  grid-template-rows:auto;
   column-gap:<?php echo $gap ?>;
   <?php if ( (int)$s['pad_x']['size'] > 0 ) echo "padding:0 {$pad_x};"; ?>
   width:100%;
   box-sizing:border-box;
 }
 #<?php echo $uid ?> .gss-card{display:contents}
+#<?php echo $uid ?> .gss-content{grid-column:1;grid-row:1;min-width:0;}
 #<?php echo $uid ?> .gss-item{
-  grid-column:1;
   min-height:<?php echo $item_h ?>;
-  display:flex;flex-direction:column;justify-content:center;gap:20px;
+  display:flex;flex-direction:column;justify-content:center;
   padding:24px 0;
   transition:opacity .35s ease;
 }
-#<?php echo $uid ?> .gss-image{
+#<?php echo $uid ?> .gss-copy{display:flex;flex-direction:column;gap:<?php echo $content_gap ?>;}
+#<?php echo $uid ?> .gss-stack-image{display:none;}
+#<?php echo $uid ?> .gss-media{
   grid-column:2;
-  grid-row:1/-1;
-  position:sticky;top:0;height:100vh;
+  grid-row:1;
+  position:sticky;top:<?php echo $sticky_top ?>;height:100vh;
+  align-self:start;
+  overflow:hidden;
+  will-change:transform;
+}
+#<?php echo $uid ?> .gss-image{
+  position:absolute;inset:0;
   overflow:hidden;
   will-change:clip-path,opacity;
 }
@@ -481,27 +610,85 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
   clip-path:inset(100% 0 0 0);
 }
 /* ── Mobile: apila imagen + texto en vertical ──────── */
+@media(max-width:1024px) and (min-width:768px){
+  #<?php echo $uid ?> .gss-item{
+    min-height:<?php echo $item_h_tablet ?>;
+  }
+  #<?php echo $uid ?> .gss-copy{gap:<?php echo $content_gap_t ?>;}
+  #<?php echo $uid ?> .gss-image-inner{
+    top:calc((100vh - <?php echo $img_h_tablet ?>) / 2);
+    bottom:calc((100vh - <?php echo $img_h_tablet ?>) / 2);
+  }
+  #<?php echo $uid ?> .gss-media{top:<?php echo $sticky_top_t ?>;}
+}
 @media(max-width:767px){
   #<?php echo $uid ?>{
-    grid-template-columns:1fr;
-    grid-template-rows:none;
+    display:block;
     padding:0;
   }
+  #<?php echo $uid ?> .gss-card{display:flex;flex-direction:column;}
+  #<?php echo $uid ?> .gss-media{
+    order:0;grid-column:auto;grid-row:auto;
+    position:sticky;top:<?php echo $sticky_top_m ?>;
+    height:<?php echo $img_h_mobile ?>;
+    align-self:stretch;z-index:50;
+  }
+  #<?php echo $uid ?> .gss-content{order:1;grid-column:auto;grid-row:auto;}
   #<?php echo $uid ?> .gss-image{
-    grid-column:1;grid-row:auto;
-    position:relative;height:60vw;
-    clip-path:none!important;opacity:1!important;z-index:auto!important;
+    position:absolute;inset:0;height:100%;
   }
   #<?php echo $uid ?> .gss-image-inner{
     position:absolute;top:0;bottom:0;left:0;right:0;
   }
-  #<?php echo $uid ?> .gss-item{min-height:auto;padding:40px 0;}
+  #<?php echo $uid ?> .gss-item{
+    min-height:<?php echo $item_h_mobile ?>;
+    padding:<?php echo $image_text_m ?> 0 <?php echo $after_text_m ?>;
+    margin-top:0!important;margin-bottom:0!important;
+  }
+  #<?php echo $uid ?> .gss-copy{gap:<?php echo $content_gap_m ?>;}
+  #<?php echo $uid ?> .gss-item:last-child{
+    min-height:auto;
+    padding-bottom:<?php echo $last_item_m ?>;
+  }
+  #<?php echo $uid ?>.gss-mobile-stacked .gss-media{display:none;}
+  #<?php echo $uid ?>.gss-mobile-stacked .gss-item{
+    min-height:auto;
+    justify-content:flex-start;
+    padding:0 0 <?php echo $after_text_m ?>;
+    opacity:1!important;
+  }
+  #<?php echo $uid ?>.gss-mobile-stacked .gss-stack-image{
+    display:block;width:100%;height:<?php echo $img_h_mobile ?>;
+    flex:0 0 auto;margin-bottom:<?php echo $image_text_m ?>;
+    background-size:cover;background-position:center;background-repeat:no-repeat;
+    border-radius:<?php echo $radius ?>;
+  }
+  #<?php echo $uid ?>.gss-mobile-stacked .gss-item:last-child{
+    padding-bottom:<?php echo $last_item_m ?>;
+  }
 }
 </style>
 
         <?php /* ── HTML ───────────────────────────────────────────────── */ ?>
-<section id="<?php echo $uid ?>" data-pe="<?php echo $data_pe ?>">
+<section id="<?php echo $uid ?>" class="gss-root<?php echo $mobile_mode === 'stacked' ? ' gss-mobile-stacked' : '' ?>" data-pe="<?php echo $data_pe ?>">
   <div class="gss-card">
+    <div class="gss-media" aria-hidden="true">
+<?php foreach ( $items as $i => $item ) :
+    $img_url  = $item['image']['url'] ?? '';
+    $clip     = $i === 0 ? 'inset(0)' : esc_attr( $initial_clip );
+    $z        = 10 + $i;
+?>
+      <div class="gss-image" data-index="<?php echo $i ?>"
+           style="z-index:<?php echo $z ?>;opacity:1;clip-path:<?php echo $clip ?>;">
+        <?php if ( $img_url ) : ?>
+        <div class="gss-image-inner"
+             style="background-image:url('<?php echo esc_url( $img_url ) ?>')"></div>
+        <?php endif ?>
+      </div>
+<?php endforeach ?>
+    </div>
+
+    <div class="gss-content">
 <?php foreach ( $items as $i => $item ) :
     $img_url  = $item['image']['url'] ?? '';
     $btn_url  = $item['btn_url']['url'] ?? '#';
@@ -509,22 +696,18 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
     $btn_nf   = ! empty( $item['btn_url']['nofollow']    ) ? ' rel="nofollow"' : '';
     $tag      = in_array( $item['title_tag'] ?? '', ['h1','h2','h3','h4','p'] )
                 ? $item['title_tag'] : 'h2';
-    $clip     = $i === 0 ? 'inset(0)' : esc_attr( $initial_clip );
-    $z        = 10 + $i;
-    $item_op  = $i === 0 ? '1' : esc_attr( (string) $iop );
+    $item_op  = ( ! $dim || $i === 0 ) ? '1' : esc_attr( (string) $iop );
     $mt       = $i === 0      ? "margin-top:{$margin};"    : '';
     $mb       = $i === $N - 1 ? "margin-bottom:{$margin};" : '';
 ?>
-    <div class="gss-image" data-index="<?php echo $i ?>"
-         style="z-index:<?php echo $z ?>;opacity:1;clip-path:<?php echo $clip ?>;">
-      <?php if ( $img_url ) : ?>
-      <div class="gss-image-inner"
-           style="background-image:url('<?php echo esc_url( $img_url ) ?>')"></div>
-      <?php endif ?>
-    </div>
-
     <div class="gss-item" data-index="<?php echo $i ?>"
          style="opacity:<?php echo $item_op ?>;<?php echo $mt . $mb ?>">
+      <?php if ( $img_url ) : ?>
+      <div class="gss-stack-image" aria-hidden="true"
+           style="background-image:url('<?php echo esc_url( $img_url ) ?>')"></div>
+      <?php endif ?>
+
+      <div class="gss-copy">
       <?php if ( ! empty( $item['eyebrow'] ) ) : ?>
       <span class="gss-eyebrow"><?php echo esc_html( $item['eyebrow'] ) ?></span>
       <?php endif ?>
@@ -558,8 +741,10 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
         </a>
       </div>
       <?php endif ?>
+      </div>
     </div>
 <?php endforeach ?>
+    </div>
   </div>
 </section>
 
@@ -568,12 +753,6 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
 (function(){
   'use strict';
 
-  // En el editor de Elementor el scroll es del iframe, no del window.
-  // El efecto sticky no funciona ahí, pero el widget es visible y editable.
-  if(typeof elementorFrontend!=='undefined'
-     && elementorFrontend.isEditMode
-     && elementorFrontend.isEditMode()) return;
-
   function clamp01(v){ return v<0?0:v>1?1:v; }
   function ease(t){ return t<0.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2; }
 
@@ -581,6 +760,7 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
   if(!root) return;
   var items  = Array.from(root.querySelectorAll('.gss-item'));
   var images = Array.from(root.querySelectorAll('.gss-image'));
+  var media  = root.querySelector('.gss-media');
   var N = items.length;
 
   var cfg={};
@@ -590,11 +770,44 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
   var dim  = !!cfg.dimInactive;
   var iop  = typeof cfg.inactiveOpacity==='number' ? cfg.inactiveOpacity : 0.3;
 
-  // En mobile dejamos el layout apilado sin animación
-  if(window.matchMedia('(max-width:767px)').matches || N<2){
-    images.forEach(function(im){ im.style.clipPath='inset(0)'; im.style.opacity='1'; });
+  // El editor no siempre desplaza el mismo documento que el iframe. Mostramos
+  // todos los textos con su color real y la primera imagen como vista previa.
+  if(typeof elementorFrontend!=='undefined'
+     && elementorFrontend.isEditMode
+     && elementorFrontend.isEditMode()){
+    items.forEach(function(item){ item.style.opacity='1'; });
+    images.forEach(function(im,index){
+      im.style.opacity=index===0?'1':'0';
+      im.style.clipPath=index===0?'inset(0)':'inset(100% 0 0 0)';
+    });
     root.classList.add('gss-ready');
     return;
+  }
+
+  if(N<2){
+    images.forEach(function(im){ im.style.clipPath='inset(0)'; im.style.opacity='1'; });
+    items.forEach(function(item){ item.style.opacity='1'; });
+    root.classList.add('gss-ready');
+    return;
+  }
+
+  // Algunos wrappers intermedios de Elementor aplican overflow y desactivan
+  // position:sticky. Sólo corregimos esos wrappers: html y body deben conservar
+  // el scroll de la página para no interferir con footers fijos o revelados.
+  var stickyContextsPrepared=false;
+  function prepareStickyAncestors(){
+    var ancestor=root.parentElement;
+    while(ancestor){
+      var style=window.getComputedStyle(ancestor);
+      var overflow=[style.overflow,style.overflowX,style.overflowY].join(' ');
+      var isPageRoot=ancestor===document.body||ancestor===document.documentElement;
+      if(!isPageRoot&&/(auto|scroll|hidden|clip|overlay)/.test(overflow)){
+        ancestor.classList.add('gss-sticky-context');
+      }
+      if(ancestor===document.documentElement) break;
+      ancestor=ancestor.parentElement;
+    }
+    stickyContextsPrepared=true;
   }
 
   // Estado inicial
@@ -607,7 +820,7 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
       images[i].style.clipPath = tr==='reveal-up' ? 'inset(0 0 100% 0)' : 'inset(100% 0 0 0)';
     }
   }
-  if(dim) items.forEach(function(el,i){ el.style.opacity=i===0?'1':String(iop); });
+  items.forEach(function(el,i){ el.style.opacity=!dim||i===0?'1':String(iop); });
   root.classList.add('gss-ready');
 
   // Loop de scroll (rAF throttle)
@@ -615,6 +828,33 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
   function tick(){
     pending=false;
     var vh=window.innerHeight, trigY=vh*trig;
+    var mobileMode=window.matchMedia('(max-width:767px)').matches;
+    if(mobileMode && root.classList.contains('gss-mobile-stacked')){
+      if(media) media.style.transform='';
+      items.forEach(function(item){ item.style.opacity='1'; });
+      return;
+    }
+    if(!stickyContextsPrepared) prepareStickyAncestors();
+    if(mobileMode && media){
+      // Medimos sin el desplazamiento aplicado en el frame anterior para que
+      // la liberación final avance de forma estable, sin saltos ni rebotes.
+      media.style.transform='';
+      var mediaRect=media.getBoundingClientRect();
+      var visibleBottom=Math.max(0,Math.min(vh,mediaRect.bottom));
+      trigY=Math.max(trigY,visibleBottom+(vh-visibleBottom)*trig);
+
+      // Al entrar el último texto bajo la imagen, ambos suben juntos. Así la
+      // imagen deja de estar visualmente sticky antes de que el texto termine.
+      var stickyTop=parseFloat(window.getComputedStyle(media).top)||0;
+      var lastRect=items[N-1].getBoundingClientRect();
+      var releaseOffset=0;
+      if(mediaRect.top<=stickyTop+1){
+        releaseOffset=Math.max(0,Math.min(media.offsetHeight+stickyTop,mediaRect.bottom-lastRect.top));
+      }
+      media.style.transform='translate3d(0,'+(-releaseOffset).toFixed(2)+'px,0)';
+    }else if(media){
+      media.style.transform='';
+    }
     var rev=new Array(N+1); rev[0]=1; rev[N]=0;
     for(var i=1;i<N;i++){
       var r=items[i].getBoundingClientRect();
@@ -645,6 +885,7 @@ class AW_Widget_Sticky_Scroll extends \Elementor\Widget_Base {
   var onScroll=function(){ if(!pending){ pending=true; requestAnimationFrame(tick); } };
   // Escuchar en window, document Y body — cubre scroll nativo, body scroll y Lenis/GSAP
   window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
   document.addEventListener('scroll', onScroll, {passive:true, capture:true});
   document.body.addEventListener('scroll', onScroll, {passive:true});
   tick(); // estado inicial

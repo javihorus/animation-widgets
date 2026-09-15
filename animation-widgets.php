@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Animation Widgets
  * Plugin URI:  https://github.com/javihorus/animation-widgets
- * Description: Widgets de animación para Elementor: Sticky Scroll, Marquee Hero, Ruleta, Galería horizontal y Scroll Fill.
- * Version: 1.14.1
+ * Description: Widgets de animación para Elementor: scroll, marquesina, ruleta y carruseles configurables.
+ * Version: 1.15.1
  * Author: Javi Horus
  * Text Domain: animation-widgets
  * Requires at least: 6.0
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ANIMATION_WIDGETS_VERSION', '1.14.1' );
+define( 'ANIMATION_WIDGETS_VERSION', '1.15.1' );
 define( 'ANIMATION_WIDGETS_FILE', __FILE__ );
 define( 'ANIMATION_WIDGETS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ANIMATION_WIDGETS_URL', plugin_dir_url( __FILE__ ) );
@@ -47,8 +47,6 @@ function animation_widgets_bootstrap() {
 	add_action( 'elementor/elements/categories_registered', 'animation_widgets_register_category' );
 	add_action( 'elementor/widgets/register', 'animation_widgets_register_widgets' );
 	add_action( 'wp_enqueue_scripts', 'animation_widgets_register_assets' );
-	require_once ANIMATION_WIDGETS_PATH . 'includes/class-scroll-fill-extension.php';
-	\Animation_Widgets\Scroll_Fill_Extension::register();
 }
 add_action( 'plugins_loaded', 'animation_widgets_bootstrap' );
 
@@ -88,7 +86,7 @@ function animation_widgets_register_assets() {
 }
 
 /**
- * Register the two existing widgets and the two new widgets.
+ * Register all Animation Widgets widgets.
  *
  * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  */
@@ -97,13 +95,15 @@ function animation_widgets_register_widgets( $widgets_manager ) {
 	require_once ANIMATION_WIDGETS_PATH . 'widgets/widget-marquee-hero.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-interactive-wheel.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-scroll-gallery.php';
-	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-scroll-fill.php';
+	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-testimonial-carousel.php';
+	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-programs-carousel.php';
 
 	$widgets_manager->register( new \AW_Widget_Sticky_Scroll() );
 	$widgets_manager->register( new \AW_Widget_Marquee_Hero() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Interactive_Wheel() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Scroll_Gallery() );
-	$widgets_manager->register( new \Animation_Widgets\Widgets\Scroll_Fill() );
+	$widgets_manager->register( new \Animation_Widgets\Widgets\Testimonial_Carousel() );
+	$widgets_manager->register( new \Animation_Widgets\Widgets\Programs_Carousel() );
 }
 
 /**

@@ -14,7 +14,7 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
     public function get_name()        { return 'aw-marquee-hero'; }
     public function get_title()       { return 'Marquee Hero'; }
     public function get_icon()        { return 'eicon-slider-full-screen'; }
-    public function get_categories()  { return [ 'general' ]; }
+    public function get_categories()  { return [ 'animation-widgets' ]; }
     public function get_keywords()    { return [ 'marquee', 'hero', 'carrusel', 'banner', 'parallax', 'aw' ]; }
 
     // ─────────────────────────────────────────────────────────────────
@@ -241,11 +241,15 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
             'label' => 'Fondo',
             'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
         ] );
-        $this->add_control( 'hero_height', [
-            'label'   => 'Altura del hero (vh)',
-            'type'    => \Elementor\Controls_Manager::SLIDER,
-            'default' => [ 'size' => 100 ],
-            'range'   => [ 'px' => [ 'min' => 30, 'max' => 100 ] ],
+        $this->add_responsive_control( 'hero_height', [
+            'label'      => 'Altura del hero',
+            'type'       => \Elementor\Controls_Manager::SLIDER,
+            'size_units' => [ 'vh' ],
+            'default'    => [ 'size' => 100, 'unit' => 'vh' ],
+            'range'      => [ 'vh' => [ 'min' => 30, 'max' => 100 ] ],
+            // La unidad se fuerza a vh para mantener compatibles los widgets
+            // antiguos, cuyo control guardaba internamente la unidad como px.
+            'selectors'  => [ '{{WRAPPER}} .aw-mh-wrap' => 'height: {{SIZE}}vh;' ],
         ] );
         $this->add_group_control( \Elementor\Group_Control_Background::get_type(), [
             'name'     => 'hero_bg',
@@ -398,7 +402,6 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
         $large_h  = ( $s['large_h']['size']    ?? 500 ) . 'px';
         $bright   = ( $s['img_brightness']['size'] ?? 80 ) / 100;
         $radius   = ( $s['img_radius']['size'] ?? 4   ) . 'px';
-        $height   = ( $s['hero_height']['size'] ?? 100 ) . 'vh';
         $dir        = ( $s['direction'] ?? 'left' ) === 'right' ? 'animation-direction:reverse;' : '';
         $pause      = ( $s['pause_hover'] ?? '' ) === 'yes';
         $kf_name    = 'aw-mh-move-' . $this->get_id();
@@ -421,7 +424,8 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
 
         ?>
 <style>
-#<?php echo $uid ?>{position:relative;width:100%;height:<?php echo $height ?>;overflow:hidden;}
+#<?php echo $uid ?>{position:relative;width:100%;overflow:hidden;isolation:isolate;}
+:where(#<?php echo $uid ?>){height:100vh;}
 #<?php echo $uid ?> .aw-mh-marquee{position:absolute;inset:0;overflow:hidden;z-index:1;}
 #<?php echo $uid ?> .aw-mh-track{
   display:flex;align-items:flex-start;width:max-content;height:100%;
@@ -440,22 +444,22 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
 #<?php echo $uid ?> .aw-mh-img-small{width:<?php echo $small_w ?>;height:<?php echo $small_h ?>;}
 #<?php echo $uid ?> .aw-mh-img-large{width:<?php echo $large_w ?>;height:<?php echo $large_h ?>;}
 /* Overlay ─ sólo estructura; color/padding/posición los gestiona Elementor */
-#<?php echo $uid ?> .aw-mh-overlay{position:absolute;inset:0;z-index:10;pointer-events:none;}
+#<?php echo $uid ?> .aw-mh-overlay{position:absolute;inset:0;pointer-events:none;}
 
 /* Etiqueta superior: layout estructural — top/padding/color/align → Elementor */
 #<?php echo $uid ?> .aw-mh-top{
   position:absolute;left:0;right:0;
-  display:flex;align-items:center;
+  z-index:10;display:flex;align-items:center;
   animation:aw-mh-reveal 1s cubic-bezier(.22,1,.36,1) forwards;
 }
 
 /* Título: siempre centrado — translateY/padding/color/align/blend → Elementor */
 #<?php echo $uid ?> .aw-mh-text{
   position:absolute;inset:0;
-  display:flex;align-items:center;
+  z-index:10;display:flex;align-items:center;
   animation:aw-mh-reveal 1.4s cubic-bezier(.22,1,.36,1) forwards;
 }
-#<?php echo $uid ?> .aw-mh-heading{
+:where(#<?php echo $uid ?>) .aw-mh-heading{
   max-width:1000px;margin:0;
   font-size:clamp(48px,8vw,120px);line-height:.95;
   letter-spacing:-0.065em;text-wrap:balance;font-weight:400;
@@ -464,7 +468,7 @@ class AW_Widget_Marquee_Hero extends \Elementor\Widget_Base {
 /* Texto inferior: layout estructural — bottom/padding/color/align → Elementor */
 #<?php echo $uid ?> .aw-mh-bottom{
   position:absolute;left:0;right:0;
-  display:flex;flex-direction:column;align-items:center;
+  z-index:10;display:flex;flex-direction:column;align-items:center;
   animation:aw-mh-reveal 1.8s cubic-bezier(.22,1,.36,1) forwards;
 }
 #<?php echo $uid ?> .aw-mh-bottom p{margin:0;}
