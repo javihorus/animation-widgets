@@ -3,7 +3,7 @@
  * Plugin Name: Animation Widgets
  * Plugin URI:  https://github.com/javihorus/animation-widgets
  * Description: Widgets de animación para Elementor: scroll, marquesina, ruleta y carruseles configurables.
- * Version: 1.15.1
+ * Version: 1.15.2
  * Author: Javi Horus
  * Text Domain: animation-widgets
  * Requires at least: 6.0
@@ -18,19 +18,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ANIMATION_WIDGETS_VERSION', '1.15.1' );
+define( 'ANIMATION_WIDGETS_VERSION', '1.15.2' );
 define( 'ANIMATION_WIDGETS_FILE', __FILE__ );
 define( 'ANIMATION_WIDGETS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ANIMATION_WIDGETS_URL', plugin_dir_url( __FILE__ ) );
 
-// Preserve the public constants exposed by Animation Widgets 1.11.0.
 define( 'AW_VERSION', ANIMATION_WIDGETS_VERSION );
 define( 'AW_DIR', ANIMATION_WIDGETS_PATH );
 define( 'AW_URL', ANIMATION_WIDGETS_URL );
 
-/**
- * Bootstrap the plugin after all plugins are available.
- */
 function animation_widgets_bootstrap() {
 	load_plugin_textdomain( 'animation-widgets', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
@@ -47,14 +43,13 @@ function animation_widgets_bootstrap() {
 	add_action( 'elementor/elements/categories_registered', 'animation_widgets_register_category' );
 	add_action( 'elementor/widgets/register', 'animation_widgets_register_widgets' );
 	add_action( 'wp_enqueue_scripts', 'animation_widgets_register_assets' );
+
+	// Scroll Fill extension for native Elementor Heading/Text Editor widgets.
+	require_once ANIMATION_WIDGETS_PATH . 'includes/class-scroll-fill-extension.php';
+	\Animation_Widgets\Scroll_Fill_Extension::register();
 }
 add_action( 'plugins_loaded', 'animation_widgets_bootstrap' );
 
-/**
- * Register the custom widget category.
- *
- * @param \Elementor\Elements_Manager $elements_manager Elementor elements manager.
- */
 function animation_widgets_register_category( $elements_manager ) {
 	$elements_manager->add_category(
 		'animation-widgets',
@@ -65,9 +60,6 @@ function animation_widgets_register_category( $elements_manager ) {
 	);
 }
 
-/**
- * Register frontend dependencies. Elementor enqueues them only when required.
- */
 function animation_widgets_register_assets() {
 	wp_register_style(
 		'animation-widgets-frontend',
@@ -85,16 +77,12 @@ function animation_widgets_register_assets() {
 	);
 }
 
-/**
- * Register all Animation Widgets widgets.
- *
- * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
- */
 function animation_widgets_register_widgets( $widgets_manager ) {
 	require_once ANIMATION_WIDGETS_PATH . 'widgets/widget-sticky-scroll.php';
 	require_once ANIMATION_WIDGETS_PATH . 'widgets/widget-marquee-hero.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-interactive-wheel.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-scroll-gallery.php';
+	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-scroll-fill.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-testimonial-carousel.php';
 	require_once ANIMATION_WIDGETS_PATH . 'includes/widgets/class-programs-carousel.php';
 
@@ -102,13 +90,11 @@ function animation_widgets_register_widgets( $widgets_manager ) {
 	$widgets_manager->register( new \AW_Widget_Marquee_Hero() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Interactive_Wheel() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Scroll_Gallery() );
+	$widgets_manager->register( new \Animation_Widgets\Widgets\Scroll_Fill() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Testimonial_Carousel() );
 	$widgets_manager->register( new \Animation_Widgets\Widgets\Programs_Carousel() );
 }
 
-/**
- * Show a clear dependency notice instead of causing a fatal error.
- */
 function animation_widgets_missing_elementor_notice() {
 	if ( ! current_user_can( 'activate_plugins' ) ) {
 		return;
@@ -120,9 +106,6 @@ function animation_widgets_missing_elementor_notice() {
 	<?php
 }
 
-/**
- * Show a compatibility notice for unsupported Elementor versions.
- */
 function animation_widgets_old_elementor_notice() {
 	if ( ! current_user_can( 'activate_plugins' ) ) {
 		return;
