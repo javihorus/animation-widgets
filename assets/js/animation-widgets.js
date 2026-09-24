@@ -381,6 +381,7 @@
 		let pointerStartY = 0;
 		let pointerStartOffset = 0;
 		let dragged = false;
+		let pendingLink = null;
 		let pausedUntil = 0;
 		let targetOffset = null;
 		let suppressClickUntil = 0;
@@ -498,7 +499,13 @@
 			pointerStartY = event.clientY;
 			pointerStartOffset = offset;
 			dragged = false;
+			pendingLink = event.target.closest('a.aw-programs__overlay, a.aw-programs__button, a.aw-programs__summary-button');
 			targetOffset = null;
+			try {
+				viewport.setPointerCapture(event.pointerId);
+			} catch (error) {
+				// La interacción sigue funcionando aunque el navegador no permita capturar.
+			}
 		});
 		viewport.addEventListener('pointermove', function (event) {
 			if (pointerId !== event.pointerId) return;
@@ -508,11 +515,6 @@
 				dragging = true;
 				dragged = true;
 				viewport.classList.add('is-dragging');
-				// Capture only after a real horizontal drag starts. Capturing on pointerdown
-				// retargets a normal click to the viewport and prevents program links from opening.
-				if (viewport.setPointerCapture) {
-					try { viewport.setPointerCapture(event.pointerId); } catch (error) {}
-				}
 			}
 			if (dragging) {
 				offset = pointerStartOffset - deltaX;
@@ -523,14 +525,20 @@
 		function finishPointer(event) {
 			if (pointerId !== event.pointerId) return;
 			const wasDragged = dragged;
-			if (viewport.hasPointerCapture && viewport.hasPointerCapture(event.pointerId)) {
-				try { viewport.releasePointerCapture(event.pointerId); } catch (error) {}
-			}
+			const linkToActivate = !wasDragged ? pendingLink : null;
 			pointerId = null;
 			dragging = false;
+			pendingLink = null;
 			viewport.classList.remove('is-dragging');
 			pausedUntil = performance.now() + resumeDelay;
-			if (wasDragged) suppressClickUntil = performance.now() + 350;
+			if (wasDragged) {
+				suppressClickUntil = performance.now() + 350;
+			} else if (linkToActivate) {
+				// Pointer capture retargets the browser click to the viewport. Activate
+				// the original link explicitly, then suppress only the duplicate click.
+				linkToActivate.click();
+				suppressClickUntil = performance.now() + 350;
+			}
 		}
 
 		viewport.addEventListener('pointerup', finishPointer);
@@ -541,7 +549,7 @@
 				event.stopPropagation();
 				return;
 			}
-			if (event.target.closest('a.aw-programs__button, a.aw-programs__summary-button')) return;
+			if (event.target.closest('a.aw-programs__overlay, a.aw-programs__button, a.aw-programs__summary-button')) return;
 			const card = event.target.closest('[data-aw-program-card]');
 			if (!card || (lastPointerType !== 'touch' && !window.matchMedia('(hover: none)').matches)) return;
 			const willOpen = !card.classList.contains('is-open');
