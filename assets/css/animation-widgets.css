@@ -639,6 +639,19 @@ a.aw-gallery__card:focus-visible {
 	transition: opacity .45s ease;
 }
 
+.aw-programs a.aw-programs__overlay,
+.aw-programs a.aw-programs__overlay:hover,
+.aw-programs a.aw-programs__overlay:focus,
+.aw-programs a.aw-programs__overlay:visited {
+	border-bottom: 0 !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none !important;
+	text-decoration-line: none !important;
+}
+
 .aw-programs__overlay-code {
 	display: block;
 	margin-bottom: 14px;
@@ -704,6 +717,10 @@ a.aw-gallery__card:focus-visible {
 .aw-programs a.aw-programs__summary-button:hover,
 .aw-programs a.aw-programs__summary-button:focus,
 .aw-programs a.aw-programs__summary-button:visited,
+.aw-programs a.aw-programs__overlay,
+.aw-programs a.aw-programs__overlay:hover,
+.aw-programs a.aw-programs__overlay:focus,
+.aw-programs a.aw-programs__overlay:visited,
 .aw-programs a.aw-programs__button,
 .aw-programs a.aw-programs__button:hover,
 .aw-programs a.aw-programs__button:focus,
@@ -718,6 +735,11 @@ a.aw-gallery__card:focus-visible {
 .aw-programs__button:focus-visible {
 	outline: 3px solid currentColor;
 	outline-offset: 3px;
+}
+
+.aw-programs__overlay:focus-visible {
+	outline: 3px solid currentColor;
+	outline-offset: -5px;
 }
 
 .aw-programs__summary-button:focus-visible {
