@@ -4,7 +4,7 @@ Tags: elementor, animation, roulette, carousel, testimonials, gallery
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.15.1
+Stable tag: 1.15.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,11 @@ Seis widgets de animación configurables para Elementor Free.
 4. Busca la categoría "Animation Widgets" en el editor de Elementor.
 
 == Changelog ==
+
+= 1.15.2 =
+* Toda la información superpuesta del Carrusel de programas abre ahora el enlace con un solo clic.
+* La apertura funciona también en enlaces configurados para una ventana nueva.
+* El arrastre horizontal sigue bloqueando clics accidentales sin interferir con los enlaces.
 
 = 1.15.1 =
 * Corregidos los botones del Carrusel de programas: un clic normal vuelve a abrir la URL configurada.

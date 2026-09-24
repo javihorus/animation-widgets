@@ -3,7 +3,7 @@
  * Plugin Name: Animation Widgets
  * Plugin URI:  https://github.com/javihorus/animation-widgets
  * Description: Widgets de animación para Elementor: scroll, marquesina, ruleta y carruseles configurables.
- * Version: 1.15.1
+ * Version: 1.15.2
  * Author: Javi Horus
  * Text Domain: animation-widgets
  * Requires at least: 6.0
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ANIMATION_WIDGETS_VERSION', '1.15.1' );
+define( 'ANIMATION_WIDGETS_VERSION', '1.15.2' );
 define( 'ANIMATION_WIDGETS_FILE', __FILE__ );
 define( 'ANIMATION_WIDGETS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ANIMATION_WIDGETS_URL', plugin_dir_url( __FILE__ ) );
