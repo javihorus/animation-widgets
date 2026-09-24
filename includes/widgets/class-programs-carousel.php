@@ -511,7 +511,16 @@ class Programs_Carousel extends Widget_Base {
 			$this->add_link_attributes( $summary_link_key, $item['link'] );
 			$this->add_render_attribute( $summary_link_key, 'class', 'aw-programs__summary-button' );
 			$this->add_link_attributes( $overlay_link_key, $item['link'] );
-			$this->add_render_attribute( $overlay_link_key, 'class', 'aw-programs__button' );
+			$this->add_render_attribute( $overlay_link_key, 'class', 'aw-programs__overlay' );
+			$this->add_render_attribute(
+				$overlay_link_key,
+				'aria-label',
+				sprintf(
+					/* translators: %s: program name. */
+					esc_attr__( 'Ver información sobre %s', 'animation-widgets' ),
+					'' !== $name ? $name : $eyebrow
+				)
+			);
 		}
 		?>
 		<article class="aw-programs__card" data-aw-program-card tabindex="0">
@@ -528,18 +537,18 @@ class Programs_Carousel extends Widget_Base {
 					<?php endif; ?>
 				<?php endif; ?>
 			</div>
+			<?php if ( $has_link ) : ?>
+			<a <?php echo $this->get_render_attribute_string( $overlay_link_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+			<?php else : ?>
 			<div class="aw-programs__overlay">
+			<?php endif; ?>
 				<span class="aw-programs__overlay-code"><?php echo esc_html( $eyebrow ); ?></span>
 				<?php if ( '' !== $name ) : ?><h3 class="aw-programs__title"><?php echo esc_html( $name ); ?></h3><?php endif; ?>
 				<?php if ( '' !== $description ) : ?><p class="aw-programs__description"><?php echo nl2br( esc_html( $description ) ); ?></p><?php endif; ?>
 				<?php if ( $has_button ) : ?>
-					<?php if ( $has_link ) : ?>
-						<a <?php echo $this->get_render_attribute_string( $overlay_link_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>><?php echo esc_html( $button_text ); ?></a>
-					<?php else : ?>
-						<span class="aw-programs__button"><?php echo esc_html( $button_text ); ?></span>
-					<?php endif; ?>
+					<span class="aw-programs__button"><?php echo esc_html( $button_text ); ?></span>
 				<?php endif; ?>
-			</div>
+			<?php if ( $has_link ) : ?></a><?php else : ?></div><?php endif; ?>
 		</article>
 		<?php
 	}
